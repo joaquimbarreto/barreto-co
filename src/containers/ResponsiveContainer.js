@@ -91,7 +91,7 @@ class DesktopContainer extends Component {
               size="large"
             >
               <Container>
-                <Menu.Item as="a" active>
+                <Menu.Item as={Link} to="/" active>
                   Home
                 </Menu.Item>
                 <Menu.Item
@@ -159,7 +159,7 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as="a" active>
+          <Menu.Item as={Link} to="/" active>
             Home
           </Menu.Item>
           <Menu.Item

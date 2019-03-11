@@ -10,6 +10,7 @@ import {
   Segment
 } from "semantic-ui-react";
 import ResponsiveContainer from "../containers/ResponsiveContainer";
+import { Link } from "react-router-dom";
 
 const CV = () => (
   <ResponsiveContainer>
@@ -114,29 +115,34 @@ const CV = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="About" />
               <List link inverted>
-                <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us</List.Item>
-                <List.Item as="a">Religious Ceremonies</List.Item>
-                <List.Item as="a">Gazebo Plans</List.Item>
+                <List.Item as="a" href="https://www.github.com/joaquimbarreto">
+                  Github
+                </List.Item>
+                <List.Item as={Link} to="projects">
+                  Projects
+                </List.Item>
+                <List.Item as={Link} to="cv">
+                  CV
+                </List.Item>
+                <List.Item as={Link} to="contact">
+                  Contact Me
+                </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
-              <Header inverted as="h4" content="Services" />
+              <Header inverted as="h4" content="Technologies" />
               <List link inverted>
-                <List.Item as="a">Banana Pre-Order</List.Item>
-                <List.Item as="a">DNA FAQ</List.Item>
-                <List.Item as="a">How To Access</List.Item>
-                <List.Item as="a">Favorite X-Men</List.Item>
+                <List.Item as="a">Ruby</List.Item>
+                <List.Item as="a">Ruby on Rails</List.Item>
+                <List.Item as="a">Javascript</List.Item>
+                <List.Item as="a">React</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as="h4" inverted>
-                Footer Header
+                Joaquim Barreto
               </Header>
-              <p>
-                Extra space for a call to action inside the footer that could
-                help re-engage users.
-              </p>
+              <p>Full-stack Software Developer.</p>
             </Grid.Column>
           </Grid.Row>
         </Grid>
