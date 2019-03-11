@@ -15,98 +15,304 @@ import { Link } from "react-router-dom";
 const CV = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: "8em 0em" }} vertical>
-      <Grid container stackable verticalAlign="middle">
+      <Divider
+        as="h4"
+        className="header"
+        horizontal
+        style={{ margin: "3em 0em", textTransform: "uppercase" }}
+      >
+        <Header as="h1" style={{ fontSize: "3em" }}>
+          Curriculum Vitae
+        </Header>
+      </Divider>
+      <Grid container celled="internally" stackable verticalAlign="middle">
         <Grid.Row>
-          <Grid.Column width={8}>
+          <Grid.Column>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              Joaquim Barreto CV
+              Statement
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              We can give your company superpowers to do things that they never
-              thought possible. Let us delight your customers and empower your
-              needs... through pure data analytics.
+              Full stack web developer with a passion for building beautiful,
+              fully functioning web apps. With experience in CSS, Ruby on Rails,
+              JavaScript, and React and a background in film, photography and
+              economics, I discovered web development through my strong desire
+              for continuing learning. I bring strong skills in team-building
+              and project management that help maximize growth across all major
+              goals.
             </p>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              We Make Bananas That Can Dance
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Yes that's right, you thought it was the stuff of dreams, but even
-              bananas can be bioengineered.
-            </p>
-          </Grid.Column>
-          <Grid.Column floated="right" width={6}>
-            <Image
-              bordered
-              rounded
-              size="large"
-              src="/images/joaquimbarreto.jpg"
-            />
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign="center">
-            <Button size="huge">Check Them Out</Button>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
     <Segment style={{ padding: "0em" }} vertical>
-      <Grid celled="internally" columns="equal" stackable>
+      <Grid
+        celled="internally"
+        columns="equal"
+        stackable
+        style={{ paddingBottom: "2em", paddingTop: "2em" }}
+      >
         <Grid.Row textAlign="center">
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+          <Grid.Column
+            width={6}
+            style={{ paddingBottom: "2em", paddingTop: "2em" }}
+          >
             <Header as="h3" style={{ fontSize: "2em" }}>
-              "What a Company"
+              Tecnical Projects
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               That is what they all say about us
             </p>
           </Grid.Column>
-          <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              <Image avatar src="/images/avatar/large/nan.jpg" />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+          <Grid.Column>
+            <Grid.Row
+              align="left"
+              style={{
+                paddingBottom: "1em"
+              }}
+            >
+              <Header
+                as="h3"
+                style={{
+                  fontSize: "2em"
+                }}
+              >
+                Freelancer Booking App
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                An app for a freelancer to let clients book their services
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Grid.Column textAlign="center">
+                <Button size="huge" href="https://www.freelancerbooking.app">
+                  Open App
+                </Button>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "1em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Flatiron’s Student Attendance Score Sheet (SASS)
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                An app to for school tutors to record students’ attendance
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Grid.Column textAlign="center">
+                <Button
+                  size="huge"
+                  href="https://github.com/joaquimbarreto/front_sass"
+                >
+                  Open Github
+                </Button>
+              </Grid.Column>
+            </Grid.Row>
           </Grid.Column>
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: "8em 0em" }} vertical>
-      <Container text>
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          Flatiron Final Project
-        </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          Instead of focusing on content creation and hard work, we have learned
-          how to master the art of doing nothing by providing massive amounts of
-          whitespace and generic content that can seem massive, monolithic and
-          worth your attention.
-        </p>
-        <Button as="a" size="large">
-          Read More
-        </Button>
-        <Divider
-          as="h4"
-          className="header"
-          horizontal
-          style={{ margin: "3em 0em", textTransform: "uppercase" }}
-        >
-          <a href="#">Other Projects</a>
-        </Divider>
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          Flatiron Mod 2 Project
-        </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur
-          filler content, but it's really true. It took years of gene splicing
-          and combinatory DNA research, but our bananas can really dance.
-        </p>
-        <Button as="a" size="large">
-          I'm Still Quite Interested
-        </Button>
-      </Container>
+    <Segment style={{ padding: "0em" }} vertical>
+      <Grid
+        celled="internally"
+        columns="equal"
+        stackable
+        style={{ paddingBottom: "2em", paddingTop: "2em" }}
+      >
+        <Grid.Row textAlign="center">
+          <Grid.Column
+            width={6}
+            style={{ paddingBottom: "2em", paddingTop: "2em" }}
+          >
+            <Header as="h3" style={{ fontSize: "2em" }}>
+              Technical Skills
+            </Header>
+            <p style={{ fontSize: "1.33em" }}>Software</p>
+          </Grid.Column>
+          <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                HTML, CSS. Ruby, Rails, SQL, JavaScript, React, Redux
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                Full-stack Software Developer
+              </p>
+            </Grid.Row>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </Segment>
+    <Segment style={{ padding: "0em" }} vertical>
+      <Grid
+        celled="internally"
+        columns="equal"
+        stackable
+        style={{ paddingBottom: "2em", paddingTop: "2em" }}
+      >
+        <Grid.Row textAlign="center">
+          <Grid.Column
+            width={6}
+            style={{ paddingBottom: "2em", paddingTop: "2em" }}
+          >
+            <Header as="h3" style={{ fontSize: "2em" }}>
+              Employment History
+            </Header>
+            <p style={{ fontSize: "1.33em" }}>
+              That is what they all say about us
+            </p>
+          </Grid.Column>
+          <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Barreto.film, London, UK
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i>March 2005 - October 2018</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
+                Filmmaker
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Barreto.photography & Barreto.video, London, UK
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i>July 2003 - October 2018</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em" }}>Photographer</p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Bureau of Finance, Government of Macau (DSF), Macau, China
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i> July 1999 - June 2003</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em" }}>Economist</p>
+            </Grid.Row>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </Segment>
+    <Segment style={{ padding: "0em" }} vertical>
+      <Grid
+        celled="internally"
+        columns="equal"
+        stackable
+        style={{ paddingBottom: "2em", paddingTop: "2em" }}
+      >
+        <Grid.Row textAlign="center">
+          <Grid.Column
+            width={6}
+            style={{ paddingBottom: "2em", paddingTop: "2em" }}
+          >
+            <Header as="h3" style={{ fontSize: "2em" }}>
+              Education
+            </Header>
+            <p style={{ fontSize: "1.33em" }}>
+              That is what they all say about us
+            </p>
+          </Grid.Column>
+          <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Flatiron School - London, UK
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i>2019</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em" }}>
+                Full Stack Web Development, Ruby on Rails, JavaScript & React
+                program
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                University of the Arts, London - London, UK
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i>2006</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em" }}>
+                Master of Arts: Fashion Photography
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                University of Adelaide - Adelaide, South Australia
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i>1998</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em" }}>
+                Bachelor of Economics: Econometrics
+              </p>
+            </Grid.Row>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     </Segment>
     <Segment inverted vertical style={{ padding: "5em 0em" }}>
       <Container>
