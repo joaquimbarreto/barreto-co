@@ -193,7 +193,12 @@ class MobileContainer extends Component {
                   <Icon name="sidebar" />
                 </Menu.Item>
                 <Menu.Item position="right">
-                  <Button as="a" inverted style={{ marginLeft: "0.5em" }}>
+                  <Button
+                    as={Link}
+                    to="contact"
+                    inverted
+                    style={{ marginLeft: "0.5em" }}
+                  >
                     Contact Me
                   </Button>
                 </Menu.Item>
