@@ -33,7 +33,12 @@ const Projects = () => (
           on Rails with ActiveAdmin on the backend with Javascript and React on
           the front end.
         </p>
-        <Button as="a" size="large" href="http://www.freelancerbooking.app">
+        <Button
+          as="a"
+          size="large"
+          href="http://www.freelancerbooking.app"
+          target="_blank"
+        >
           Open App
         </Button>
         <Header as="h3" style={{ fontSize: "2em" }}>
@@ -47,6 +52,7 @@ const Projects = () => (
           as="a"
           size="large"
           href="https://studio-darkroom-workshop-app.herokuapp.com/"
+          target="_blank"
         >
           Open App
         </Button>
@@ -59,7 +65,11 @@ const Projects = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="About" />
               <List link inverted>
-                <List.Item as="a" href="https://www.github.com/joaquimbarreto">
+                <List.Item
+                  as="a"
+                  href="https://www.github.com/joaquimbarreto"
+                  target="_blank"
+                >
                   Github
                 </List.Item>
                 <List.Item as={Link} to="projects">

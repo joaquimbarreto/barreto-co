@@ -5,7 +5,6 @@ import {
   Divider,
   Grid,
   Header,
-  Image,
   List,
   Segment
 } from "semantic-ui-react";
@@ -321,7 +320,11 @@ const CV = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="About" />
               <List link inverted>
-                <List.Item as="a" href="https://www.github.com/joaquimbarreto">
+                <List.Item
+                  as="a"
+                  href="https://www.github.com/joaquimbarreto"
+                  target="_blank"
+                >
                   Github
                 </List.Item>
                 <List.Item as={Link} to="projects">

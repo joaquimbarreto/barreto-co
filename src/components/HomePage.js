@@ -57,9 +57,14 @@ const HomePage = () => (
                 avatar
                 src="/images/github.png"
                 href="https://www.github.com/joaquimbarreto?tab=repositories"
+                target="_blank"
               />
               Click{" "}
-              <a href="https://www.github.com/joaquimbarreto?tab=repositories">
+              <a
+                href="https://www.github.com/joaquimbarreto?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 here
               </a>{" "}
               to see all repositories.
@@ -100,6 +105,7 @@ const HomePage = () => (
           as="a"
           size="large"
           href="https://studio-darkroom-workshop-app.herokuapp.com/"
+          target="_blank"
         >
           Open App
         </Button>
@@ -112,7 +118,11 @@ const HomePage = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="About" />
               <List link inverted>
-                <List.Item as="a" href="https://www.github.com/joaquimbarreto">
+                <List.Item
+                  as="a"
+                  href="https://www.github.com/joaquimbarreto"
+                  target="_blank"
+                >
                   Github
                 </List.Item>
                 <List.Item as={Link} to="projects">
