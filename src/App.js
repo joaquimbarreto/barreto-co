@@ -1,15 +1,33 @@
 import React, { Component } from "react";
 import "./App.css";
-import HomepageLayout from "./components/HomepageLayout";
+import HomePage from "./components/HomePage";
+import Projects from "./components/Projects";
+import CV from "./components/CV";
+import Contact from "./components/Contact";
+import { Route, Switch, withRouter } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <HomepageLayout />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route
+            path="/projects"
+            component={routerProps => <Projects {...routerProps} />}
+          />
+          <Route
+            path="/cv"
+            component={routerProps => <CV {...routerProps} />}
+          />
+          <Route
+            path="/contact"
+            component={routerProps => <Contact {...routerProps} />}
+          />
+        </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
