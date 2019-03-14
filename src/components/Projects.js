@@ -33,6 +33,7 @@ const Projects = () => (
           on Rails with ActiveAdmin on the backend with Javascript and React on
           the front end.
         </p>
+        <p>(Login details - username: joaquim, password: password)</p>
         <Button
           as="a"
           size="large"
@@ -48,6 +49,7 @@ const Projects = () => (
           This app was a pair programming project during Module 2 at Flatiron
           School. The app uses on Ruby on Rails with Bootstrap CSS.
         </p>
+        <p>(Login details - username: joaquim, password: password)</p>
         <Button
           as="a"
           size="large"
