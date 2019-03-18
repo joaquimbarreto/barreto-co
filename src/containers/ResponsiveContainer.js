@@ -11,7 +11,7 @@ import {
   Sidebar,
   Visibility
 } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -61,14 +61,19 @@ HomepageHeading.propTypes = {
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
-  state = {};
+  state = {
+    fixed: null,
+    activeItem: ""
+  };
 
   hideFixedMenu = () => this.setState({ fixed: false });
   showFixedMenu = () => this.setState({ fixed: true });
 
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
   render() {
     const { children } = this.props;
-    const { fixed } = this.state;
+    const { fixed, activeItem } = this.state;
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
@@ -91,7 +96,13 @@ class DesktopContainer extends Component {
               size="large"
             >
               <Container>
-                <Menu.Item as={Link} to="/" active>
+                <Menu.Item
+                  as={NavLink}
+                  to="/"
+                  name="home"
+                  active={activeItem === "home"}
+                  onClick={this.handleItemClick}
+                >
                   Home
                 </Menu.Item>
                 <Menu.Item
@@ -101,15 +112,27 @@ class DesktopContainer extends Component {
                 >
                   Github
                 </Menu.Item>
-                <Menu.Item as={Link} to="projects">
+                <Menu.Item
+                  as={NavLink}
+                  to="projects"
+                  name="projects"
+                  active={activeItem === "projects"}
+                  onClick={this.handleItemClick}
+                >
                   Projects
                 </Menu.Item>
-                <Menu.Item as={Link} to="cv">
+                <Menu.Item
+                  as={NavLink}
+                  to="cv"
+                  name="cv"
+                  active={activeItem === "cv"}
+                  onClick={this.handleItemClick}
+                >
                   CV
                 </Menu.Item>
                 <Menu.Item position="right">
                   <Button
-                    as={Link}
+                    as={NavLink}
                     to="contact"
                     inverted={!fixed}
                     primary={fixed}
