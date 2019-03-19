@@ -19,7 +19,7 @@ const Projects = () => (
           as="h4"
           className="header"
           horizontal
-          style={{ margin: "3em 0em", textTransform: "uppercase" }}
+          style={{ margin: "2em 0em", textTransform: "uppercase" }}
         >
           <Header as="h1" style={{ fontSize: "3em" }}>
             Featured Projects
