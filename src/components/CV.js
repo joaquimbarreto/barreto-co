@@ -78,17 +78,61 @@ const CV = () => (
                 Freelancer Booking App
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                An app for a freelancer to let clients book their services
+                An app for a freelancer to let clients book their services.
               </p>
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "1em"
               }}
               align="left"
             >
-              <Grid.Column textAlign="center">
-                <Button size="huge" href="https://www.freelancerbooking.app">
+              <Grid.Column
+                textAlign="center"
+                style={{
+                  paddingBottom: "2em"
+                }}
+              >
+                <Button size="large" href="https://www.freelancerbooking.app">
+                  Open App
+                </Button>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row
+              align="left"
+              style={{
+                paddingBottom: "1em"
+              }}
+            >
+              <Header
+                as="h3"
+                style={{
+                  fontSize: "2em"
+                }}
+              >
+                Studio Darkroom Workshop App
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                An app for users to book space in Pullen's yards for film and
+                photography purposes.
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "1em"
+              }}
+              align="left"
+            >
+              <Grid.Column
+                textAlign="center"
+                style={{
+                  paddingBottom: "2em"
+                }}
+              >
+                <Button
+                  size="large"
+                  href="https://studio-darkroom-workshop-app.herokuapp.com/"
+                >
                   Open App
                 </Button>
               </Grid.Column>
@@ -103,7 +147,7 @@ const CV = () => (
                 Flatiron’s Student Attendance Score Sheet (SASS)
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                An app to for school tutors to record students’ attendance
+                An app to for school tutors to record students’ attendance.
               </p>
             </Grid.Row>
             <Grid.Row
@@ -114,10 +158,10 @@ const CV = () => (
             >
               <Grid.Column textAlign="center">
                 <Button
-                  size="huge"
-                  href="https://github.com/joaquimbarreto/front_sass"
+                  size="large"
+                  href="https://github.com/joaquimbarreto/Flatiron-SASS"
                 >
-                  Open Github
+                  Github
                 </Button>
               </Grid.Column>
             </Grid.Row>

@@ -11,7 +11,7 @@ import {
 import ResponsiveContainer from "../containers/ResponsiveContainer";
 import { Link } from "react-router-dom";
 
-const Projects = () => (
+const Contact = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: "8em 0em" }} vertical>
       <Grid container stackable verticalAlign="middle">
@@ -91,4 +91,4 @@ const Projects = () => (
     </Segment>
   </ResponsiveContainer>
 );
-export default Projects;
+export default Contact;

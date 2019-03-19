@@ -29,30 +29,53 @@ const Projects = () => (
           Freelancer Booking App
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          This app was Joaquim's final project at Flatiron School. It uses Ruby
-          on Rails with ActiveAdmin on the backend with Javascript and React on
-          the front end.
+          This app was Joaquim's final project at Flatiron School. It is an app
+          for a freelancer to let clients book their services. It uses Ruby on
+          Rails with ActiveAdmin on the backend with Javascript and React on the
+          front end. Deployed on Heroku with custom domain.
         </p>
         <p>(Login details - username: joaquim, password: password)</p>
         <Button
           as="a"
-          size="large"
+          size="huge"
           href="http://www.freelancerbooking.app"
           target="_blank"
         >
           Open App
         </Button>
+        <Divider style={{ margin: "2em 1em" }} />
         <Header as="h3" style={{ fontSize: "2em" }}>
-          Flatiron Mod 2 Project
+          Flatiron - Student Attendance Score Sheet
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          This app was a pair programming project during Module 2 at Flatiron
-          School. The app uses on Ruby on Rails with Bootstrap CSS.
+          This app was Joaquim's pair programming project during Module 3 at
+          Flatiron School. An app to for school tutors to record students’
+          attendance. It uses Ruby on Rails on the backend with Javascript on
+          the front end.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="https://github.com/joaquimbarreto/Flatiron-SASS"
+          target="_blank"
+        >
+          Github
+        </Button>
+        <Divider style={{ margin: "2em 1em" }} />
+
+        <Header as="h3" style={{ fontSize: "2em" }}>
+          Studio Darkroom Workshop App
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          This booking app was a pair programming project during Module 2 at
+          Flatiron School. It is an app for users to book space in Pullen's
+          yards for film and photography purposes. The app uses on Ruby on Rails
+          with Bootstrap CSS. Deployed on Heroku.
         </p>
         <p>(Login details - username: joaquim, password: password)</p>
         <Button
           as="a"
-          size="large"
+          size="huge"
           href="https://studio-darkroom-workshop-app.herokuapp.com/"
           target="_blank"
         >
