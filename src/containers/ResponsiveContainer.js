@@ -61,19 +61,16 @@ HomepageHeading.propTypes = {
  * It can be more complicated, but you can create really flexible markup.
  */
 class DesktopContainer extends Component {
-  state = {
-    fixed: null,
-    activeItem: ""
-  };
+  state = {};
 
   hideFixedMenu = () => this.setState({ fixed: false });
   showFixedMenu = () => this.setState({ fixed: true });
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-
   render() {
     const { children } = this.props;
-    const { fixed, activeItem } = this.state;
+    const { fixed } = this.state;
+
+    const Nav = props => <NavLink exact {...props} activeClassName="active" />;
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
@@ -96,13 +93,7 @@ class DesktopContainer extends Component {
               size="large"
             >
               <Container>
-                <Menu.Item
-                  as={NavLink}
-                  to="/"
-                  name="home"
-                  active={activeItem === "home"}
-                  onClick={this.handleItemClick}
-                >
+                <Menu.Item as={Nav} to="/" name="home">
                   Home
                 </Menu.Item>
                 <Menu.Item
@@ -112,27 +103,15 @@ class DesktopContainer extends Component {
                 >
                   Github
                 </Menu.Item>
-                <Menu.Item
-                  as={NavLink}
-                  to="projects"
-                  name="projects"
-                  active={activeItem === "projects"}
-                  onClick={this.handleItemClick}
-                >
+                <Menu.Item as={Nav} to="/projects" name="projects">
                   Projects
                 </Menu.Item>
-                <Menu.Item
-                  as={NavLink}
-                  to="cv"
-                  name="cv"
-                  active={activeItem === "cv"}
-                  onClick={this.handleItemClick}
-                >
+                <Menu.Item as={Nav} to="/cv" name="cv">
                   CV
                 </Menu.Item>
                 <Menu.Item position="right">
                   <Button
-                    as={NavLink}
+                    as={Link}
                     to="contact"
                     inverted={!fixed}
                     primary={fixed}
