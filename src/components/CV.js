@@ -59,7 +59,7 @@ const CV = () => (
               Tecnical Projects
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              That is what they all say about us
+              Highlights of major projects.
             </p>
           </Grid.Column>
           <Grid.Column>
@@ -220,7 +220,7 @@ const CV = () => (
               Employment History
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              That is what they all say about us
+              China & UK.
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
@@ -294,7 +294,7 @@ const CV = () => (
               Education
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              That is what they all say about us
+              Australia & UK.
             </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
