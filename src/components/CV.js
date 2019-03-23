@@ -58,9 +58,7 @@ const CV = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               Tecnical Projects
             </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Highlights of major projects.
-            </p>
+            <p style={{ fontSize: "1.33em" }}>Highlights of major projects.</p>
           </Grid.Column>
           <Grid.Column>
             <Grid.Row
@@ -219,9 +217,7 @@ const CV = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               Employment History
             </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              China & UK.
-            </p>
+            <p style={{ fontSize: "1.33em" }}>China & UK.</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row
@@ -293,9 +289,7 @@ const CV = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               Education
             </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Australia & UK.
-            </p>
+            <p style={{ fontSize: "1.33em" }}>Australia & UK.</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row
@@ -385,10 +379,30 @@ const CV = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="Technologies" />
               <List link inverted>
-                <List.Item as="a">Ruby</List.Item>
-                <List.Item as="a">Ruby on Rails</List.Item>
-                <List.Item as="a">Javascript</List.Item>
-                <List.Item as="a">React</List.Item>
+                <List.Item
+                  as="a"
+                  href="https://www.ruby-lang.org/"
+                  target="_blank"
+                >
+                  Ruby
+                </List.Item>
+                <List.Item
+                  as="a"
+                  href="https://rubyonrails.org/"
+                  target="_blank"
+                >
+                  Ruby on Rails
+                </List.Item>
+                <List.Item
+                  as="a"
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                >
+                  Javascript
+                </List.Item>
+                <List.Item as="a" href="https://reactjs.org/" target="_blank">
+                  React
+                </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>

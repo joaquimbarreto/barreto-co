@@ -139,10 +139,30 @@ const HomePage = () => (
             <Grid.Column width={3}>
               <Header inverted as="h4" content="Technologies" />
               <List link inverted>
-                <List.Item as="a">Ruby</List.Item>
-                <List.Item as="a">Ruby on Rails</List.Item>
-                <List.Item as="a">Javascript</List.Item>
-                <List.Item as="a">React</List.Item>
+                <List.Item
+                  as="a"
+                  href="https://www.ruby-lang.org/"
+                  target="_blank"
+                >
+                  Ruby
+                </List.Item>
+                <List.Item
+                  as="a"
+                  href="https://rubyonrails.org/"
+                  target="_blank"
+                >
+                  Ruby on Rails
+                </List.Item>
+                <List.Item
+                  as="a"
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                >
+                  Javascript
+                </List.Item>
+                <List.Item as="a" href="https://reactjs.org/" target="_blank">
+                  React
+                </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
