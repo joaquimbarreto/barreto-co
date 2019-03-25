@@ -1,4 +1,14 @@
+# JOAQUIM BARRETO
+
+This project is the personal website of Joaquim Barreto
+
+## Technologies
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+- React
+- React-Router-Dom
+- Semantic-ui-react
 
 ## Available Scripts
 
