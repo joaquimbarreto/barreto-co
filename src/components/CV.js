@@ -150,14 +150,63 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "1em"
               }}
               align="left"
             >
-              <Grid.Column textAlign="center">
+              <Grid.Column
+                textAlign="center"
+                style={{
+                  paddingBottom: "2em"
+                }}
+              >
                 <Button
                   size="large"
                   href="https://github.com/joaquimbarreto/Flatiron-SASS"
+                >
+                  Github
+                </Button>
+              </Grid.Column>
+            </Grid.Row>
+            <Grid.Row
+              align="left"
+              style={{
+                paddingBottom: "1em"
+              }}
+            >
+              <Header
+                as="h3"
+                style={{
+                  fontSize: "2em"
+                }}
+              >
+                House MD
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                An app for users to diagnose symptoms.
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "1em"
+              }}
+              align="left"
+            >
+              <Grid.Column
+                textAlign="center"
+                style={{
+                  paddingBottom: "2em"
+                }}
+              >
+                <Button
+                  size="large"
+                  href="https://flatiron-house-md.herokuapp.com/"
+                >
+                  Open App
+                </Button>
+                <Button
+                  size="large"
+                  href="https://github.com/joaquimbarreto/flatiron-house-md"
                 >
                   Github
                 </Button>
@@ -192,10 +241,10 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                HTML, CSS. Ruby, Rails, SQL, JavaScript, React, Redux
+                HTML, CSS, Ruby, Rails, SQL, JavaScript, React, Redux
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Full-stack Software Developer
+                Semantic-React, Material-ui, Bootstrap
               </p>
             </Grid.Row>
           </Grid.Column>

@@ -62,7 +62,6 @@ const Projects = () => (
           Github
         </Button>
         <Divider style={{ margin: "2em 1em" }} />
-
         <Header as="h3" style={{ fontSize: "2em" }}>
           Studio Darkroom Workshop App
         </Header>
@@ -80,6 +79,32 @@ const Projects = () => (
           target="_blank"
         >
           Open App
+        </Button>
+        <Divider style={{ margin: "2em 1em" }} />
+        <Header as="h3" style={{ fontSize: "2em" }}>
+          House MD
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          This booking app was a pair programming project during Module 2 at
+          Flatiron School. It is an app for users to diagnose symptoms on their
+          bodies. The app uses on Ruby on Rails on the backend with Javascript
+          and React on the frontend with Material-ui CSS. Deployed on Heroku.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="https://flatiron-house-md.herokuapp.com/"
+          target="_blank"
+        >
+          Open App
+        </Button>
+        <Button
+          as="a"
+          size="huge"
+          href="https://github.com/joaquimbarreto/flatiron-house-md"
+          target="_blank"
+        >
+          Github
         </Button>
       </Container>
     </Segment>
