@@ -241,7 +241,7 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                HTML, CSS, Ruby, Rails, SQL, JavaScript, React, Redux
+                HTML, Ruby, Rails, SQL, JavaScript, React, Redux, Node.js
               </Header>
               <p style={{ fontSize: "1.33em" }}>
                 Semantic-React, Material-ui, Bootstrap
