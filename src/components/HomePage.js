@@ -177,4 +177,5 @@ const HomePage = () => (
     </Segment>
   </ResponsiveContainer>
 );
+
 export default HomePage;
