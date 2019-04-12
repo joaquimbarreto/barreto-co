@@ -433,7 +433,7 @@ const CV = () => (
                   href="https://www.ruby-lang.org/"
                   target="_blank"
                 >
-                  Rubu
+                  Ruby
                 </List.Item>
                 <List.Item
                   as="a"
