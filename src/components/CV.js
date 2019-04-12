@@ -466,4 +466,5 @@ const CV = () => (
     </Segment>
   </ResponsiveContainer>
 );
+
 export default CV;
