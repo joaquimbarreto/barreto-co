@@ -440,7 +440,7 @@ const CV = () => (
                   href="https://rubyonrails.org/"
                   target="_blank"
                 >
-                  Ruby on Rails
+                  Ruby Rails
                 </List.Item>
                 <List.Item
                   as="a"
