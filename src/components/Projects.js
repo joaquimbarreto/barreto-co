@@ -111,8 +111,8 @@ const Projects = () => (
           How To Do Things In Life
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          A fun app and the idea just came to me. Everyone alsways have this
-          dilemma when to decided to do things. No longer as this app will help
+          A fun app and the idea just came to me. Everyone always have this
+          dilemma when making decisions. No longer! As this app will help
           in every decision one makes. I did this app using React Hooks
           (useState and useEfect) on the frontend. Deployed on Netlify.
         </p>
