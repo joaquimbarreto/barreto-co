@@ -106,12 +106,15 @@ const Projects = () => (
         >
           Github
         </Button>
+        <Divider style={{ margin: "2em 1em" }} />
         <Header as="h3" style={{ fontSize: "2em" }}>
           How To Do Things In Life
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          A fun app that came to me. Just using React Hooks (useState and
-          useEfect) on the frontend. Deployed on Netlify.
+          A fun app and the idea just came to me. Everyone alsways have this
+          dilemma when to decided to do things. No longer as this app will help
+          in every decision one makes. I did this app using React Hooks
+          (useState and useEfect) on the frontend. Deployed on Netlify.
         </p>
         <Button
           as="a"
