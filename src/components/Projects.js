@@ -106,6 +106,29 @@ const Projects = () => (
         >
           Github
         </Button>
+        <Header as="h3" style={{ fontSize: "2em" }}>
+          How To Do Things In Life
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          A fun app that came to me. Just using React Hooks (useState and
+          useEfect) on the frontend. Deployed on Netlify.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="https://howtodothingsinlife.netlify.com/"
+          target="_blank"
+        >
+          Open App
+        </Button>
+        <Button
+          as="a"
+          size="huge"
+          href="https://github.com/joaquimbarreto/thegood_thebad_and_theugly"
+          target="_blank"
+        >
+          Github
+        </Button>
       </Container>
     </Segment>
     <Segment inverted vertical style={{ padding: "5em 0em" }}>
