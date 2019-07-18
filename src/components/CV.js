@@ -161,6 +161,12 @@ const CV = () => (
                 }}
               >
                 <Button size="large" href="https://www.piglatin.app">
+                  Open App
+                </Button>
+                <Button
+                  size="large"
+                  href="https://github.com/joaquimbarreto/pig-latin"
+                >
                   Github
                 </Button>
               </Grid.Column>
