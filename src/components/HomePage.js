@@ -95,16 +95,18 @@ const HomePage = () => (
           <Link to="/projects">Other Projects</Link>
         </Divider>
         <Header as="h3" style={{ fontSize: "2em" }}>
-          Flatiron Mod 2 Project
+          Pig Latin Translator
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          This app was a pair programming project during Module 2 at Flatiron
-          School. The app uses on Ruby on Rails with Bootstrap CSS.
+          This app is a result of my attempt to do the infamous pig latin
+          translation code challenge. I did this app using React Hooks (useState
+          and useEfect) on the frontend and Ruby on Rails (5.2) on the backend.
+          Deployed on Heroku with it own domain www.piglatin.app.
         </p>
         <Button
           as="a"
           size="large"
-          href="https://studio-darkroom-workshop-app.herokuapp.com/"
+          href="https://www.piglatin.app"
           target="_blank"
         >
           Open App
