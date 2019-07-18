@@ -45,6 +45,84 @@ const Projects = () => (
         </Button>
         <Divider style={{ margin: "2em 1em" }} />
         <Header as="h3" style={{ fontSize: "2em" }}>
+          Pig Latin Translator
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          This app is a result of my attempt to do the infamous pig latin
+          translation code challenge. I did this app using React Hooks (useState
+          and useEfect) on the frontend and Ruby on Rails (5.2) on the backend.
+          Deployed on Heroku with it own domain www.piglatin.app.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="https://www.piglatin.app"
+          target="_blank"
+        >
+          Open App
+        </Button>
+        <Button
+          as="a"
+          size="huge"
+          href="https://github.com/joaquimbarreto/pig-latin"
+          target="_blank"
+        >
+          Github
+        </Button>
+        <Divider style={{ margin: "2em 1em" }} />
+        <Header as="h3" style={{ fontSize: "2em" }}>
+          How To Do Things In Life
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          A fun app and the idea just came to me. Everyone always have this
+          dilemma when making decisions. No longer! As this app will help in
+          every decision one makes. I did this app using React Hooks (useState
+          and useEfect) on the frontend. Deployed on Netlify.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="https://howtodothingsinlife.netlify.com/"
+          target="_blank"
+        >
+          Open App
+        </Button>
+        <Button
+          as="a"
+          size="huge"
+          href="https://github.com/joaquimbarreto/thegood_thebad_and_theugly"
+          target="_blank"
+        >
+          Github
+        </Button>
+        <Divider style={{ margin: "2em 1em" }} />
+        <Header as="h3" style={{ fontSize: "2em" }}>
+          House MD
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          This app was a pair programming project during Module 2 at Flatiron
+          School. It is an app for users to diagnose symptoms on their bodies.
+          The app uses on Ruby on Rails on the backend with Javascript and React
+          on the frontend. Deployed on Heroku.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="https://flatiron-house-md.herokuapp.com/"
+          target="_blank"
+        >
+          Open App
+        </Button>
+        <Button
+          as="a"
+          size="huge"
+          href="https://github.com/joaquimbarreto/flatiron-house-md"
+          target="_blank"
+        >
+          Github
+        </Button>
+        <Divider style={{ margin: "2em 1em" }} />
+        <Header as="h3" style={{ fontSize: "2em" }}>
           Flatiron - Student Attendance Score Sheet
         </Header>
         <p style={{ fontSize: "1.33em" }}>
@@ -79,58 +157,6 @@ const Projects = () => (
           target="_blank"
         >
           Open App
-        </Button>
-        <Divider style={{ margin: "2em 1em" }} />
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          House MD
-        </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          This app was a pair programming project during Module 2 at Flatiron
-          School. It is an app for users to diagnose symptoms on their bodies.
-          The app uses on Ruby on Rails on the backend with Javascript and React
-          on the frontend. Deployed on Heroku.
-        </p>
-        <Button
-          as="a"
-          size="huge"
-          href="https://flatiron-house-md.herokuapp.com/"
-          target="_blank"
-        >
-          Open App
-        </Button>
-        <Button
-          as="a"
-          size="huge"
-          href="https://github.com/joaquimbarreto/flatiron-house-md"
-          target="_blank"
-        >
-          Github
-        </Button>
-        <Divider style={{ margin: "2em 1em" }} />
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          How To Do Things In Life
-        </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          A fun app and the idea just came to me. Everyone always have this
-          dilemma when making decisions. No longer! As this app will help
-          in every decision one makes. I did this app using React Hooks
-          (useState and useEfect) on the frontend. Deployed on Netlify.
-        </p>
-        <Button
-          as="a"
-          size="huge"
-          href="https://howtodothingsinlife.netlify.com/"
-          target="_blank"
-        >
-          Open App
-        </Button>
-        <Button
-          as="a"
-          size="huge"
-          href="https://github.com/joaquimbarreto/thegood_thebad_and_theugly"
-          target="_blank"
-        >
-          Github
         </Button>
       </Container>
     </Segment>
