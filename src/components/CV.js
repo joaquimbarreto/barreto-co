@@ -142,10 +142,10 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                Flatiron’s Student Attendance Score Sheet (SASS)
+                Pig Latin Translator App
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                An app to for school tutors to record students’ attendance.
+                An app to translate any text to pig latin.
               </p>
             </Grid.Row>
             <Grid.Row
@@ -160,10 +160,7 @@ const CV = () => (
                   paddingBottom: "2em"
                 }}
               >
-                <Button
-                  size="large"
-                  href="https://github.com/joaquimbarreto/Flatiron-SASS"
-                >
+                <Button size="large" href="https://www.piglatin.app">
                   Github
                 </Button>
               </Grid.Column>
