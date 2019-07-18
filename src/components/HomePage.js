@@ -95,7 +95,7 @@ const HomePage = () => (
           <Link to="/projects">Other Projects</Link>
         </Divider>
         <Header as="h3" style={{ fontSize: "2em" }}>
-          Pig Latin Translator
+          Pig Latin Translator App
         </Header>
         <p style={{ fontSize: "1.33em" }}>
           This app is a result of my attempt to do the infamous pig latin
