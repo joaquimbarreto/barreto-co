@@ -81,7 +81,8 @@ const HomePage = () => (
         <p style={{ fontSize: "1.33em" }}>
           This app was Joaquim's final project at Flatiron School. It uses Ruby
           on Rails with ActiveAdmin on the backend with Javascript and React on
-          the front end.
+          the front end. Deployed on Heroku with it own domain:
+          www.freelancerbooking.app.
         </p>
         <Button as="a" size="large" href="http://www.freelancerbooking.app">
           Open App
@@ -98,10 +99,10 @@ const HomePage = () => (
           Pig Latin Translator App
         </Header>
         <p style={{ fontSize: "1.33em" }}>
-          This app is a result of my attempt to do the infamous pig latin
-          translation code challenge. I did this app using React Hooks (useState
-          and useEfect) on the frontend and Ruby on Rails (5.2) on the backend.
-          Deployed on Heroku with it own domain www.piglatin.app.
+          This app is a result of Joaquim's attempt to do the infamous pig latin
+          translation code challenge. This app was done by using React Hooks
+          (useState and useEfect) on the frontend and Ruby on Rails (5.2) on the
+          backend. Deployed on Heroku with it own domain: www.piglatin.app.
         </p>
         <Button
           as="a"
