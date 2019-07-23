@@ -31,13 +31,13 @@ const CV = () => (
               Statement
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              Full stack web developer with a passion for building beautiful,
-              fully functioning web apps. With experience in CSS, Ruby on Rails,
-              JavaScript, and React and a background in film, photography and
-              economics, I discovered web development through my strong desire
-              for continuing learning. I bring strong skills in team-building
-              and project management that help maximize growth across all major
-              goals.
+              Full stack software developer with a passion for building
+              beautiful, fully functioning web apps. With experience in CSS,
+              Ruby on Rails, JavaScript, and React and a background in film,
+              photography and economics, I discovered web development through my
+              strong desire for continuing learning. I bring strong skills in
+              team-building and project management that help maximize growth
+              across all major goals.
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -244,10 +244,10 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                HTML, Ruby, Rails, SQL, JavaScript, React, Redux, Node.js
+                JavaScript, React.js, Node.js, Ruby, Rails, HTML, CSS
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Semantic-React, Material-ui, Bootstrap
+                PostgreSQL, SQLite3, MongoDB
               </p>
             </Grid.Row>
           </Grid.Column>
