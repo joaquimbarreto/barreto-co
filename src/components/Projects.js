@@ -46,6 +46,32 @@ const Projects = () => (
         </Button>
         <Divider style={{ margin: "2em 1em" }} />
         <Header as="h3" style={{ fontSize: "2em" }}>
+          MERN Task Manager App
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          This app is a simple task manager. The technogies used in the back-end
+          are Node.js, Express.js and Mongoose.js. The front-end was done in
+          React.js. The choosen database is MongoDB and authentication done with
+          JWT. Deployed on Heroku.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="https://mern-task-manager.herokuapp.com"
+          target="_blank"
+        >
+          Open App
+        </Button>
+        <Button
+          as="a"
+          size="huge"
+          href="https://github.com/joaquimbarreto/pig-latin"
+          target="_blank"
+        >
+          Github
+        </Button>
+        <Divider style={{ margin: "2em 1em" }} />
+        <Header as="h3" style={{ fontSize: "2em" }}>
           Pig Latin Translator App
         </Header>
         <p style={{ fontSize: "1.33em" }}>

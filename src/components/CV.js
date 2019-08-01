@@ -108,11 +108,11 @@ const CV = () => (
                   fontSize: "2em"
                 }}
               >
-                Studio Darkroom Workshop App
+                MERN Task Manager App
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                An app for users to book space in Pullen's yards for film and
-                photography purposes.
+                A simple task manager app done in MongoDB, Express, React and
+                Node.
               </p>
             </Grid.Row>
             <Grid.Row
@@ -129,9 +129,15 @@ const CV = () => (
               >
                 <Button
                   size="large"
-                  href="https://studio-darkroom-workshop-app.herokuapp.com/"
+                  href="https://mern-task-manager.herokuapp.com"
                 >
                   Open App
+                </Button>
+                <Button
+                  size="large"
+                  href="https://github.com/joaquimbarreto/task-manager"
+                >
+                  Github
                 </Button>
               </Grid.Column>
             </Grid.Row>
@@ -246,9 +252,7 @@ const CV = () => (
               <Header as="h3" style={{ fontSize: "2em" }}>
                 JavaScript, React.js, Node.js, Ruby, Rails, HTML, CSS
               </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                PostgreSQL, SQLite3, MongoDB
-              </p>
+              <p style={{ fontSize: "1.33em" }}>PostgreSQL, SQLite3, MongoDB</p>
             </Grid.Row>
           </Grid.Column>
         </Grid.Row>
