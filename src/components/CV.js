@@ -91,7 +91,11 @@ const CV = () => (
                   paddingBottom: "2em"
                 }}
               >
-                <Button size="large" href="https://www.freelancerbooking.app">
+                <Button
+                  size="large"
+                  href="https://www.freelancerbooking.app"
+                  target="_blank"
+                >
                   Open App
                 </Button>
               </Grid.Column>
@@ -130,12 +134,14 @@ const CV = () => (
                 <Button
                   size="large"
                   href="https://mern-task-manager.herokuapp.com"
+                  target="_blank"
                 >
                   Open App
                 </Button>
                 <Button
                   size="large"
                   href="https://github.com/joaquimbarreto/task-manager"
+                  target="_blank"
                 >
                   Github
                 </Button>
@@ -166,12 +172,17 @@ const CV = () => (
                   paddingBottom: "2em"
                 }}
               >
-                <Button size="large" href="https://www.piglatin.app">
+                <Button
+                  size="large"
+                  href="https://www.piglatin.app"
+                  target="_blank"
+                >
                   Open App
                 </Button>
                 <Button
                   size="large"
                   href="https://github.com/joaquimbarreto/pig-latin"
+                  target="_blank"
                 >
                   Github
                 </Button>
@@ -210,12 +221,14 @@ const CV = () => (
                 <Button
                   size="large"
                   href="https://flatiron-house-md.herokuapp.com/"
+                  target="_blank"
                 >
                   Open App
                 </Button>
                 <Button
                   size="large"
                   href="https://github.com/joaquimbarreto/flatiron-house-md"
+                  target="_blank"
                 >
                   Github
                 </Button>
@@ -437,10 +450,10 @@ const CV = () => (
               <List link inverted>
                 <List.Item
                   as="a"
-                  href="https://www.ruby-lang.org/"
+                  href="https://www.nodejs.org/"
                   target="_blank"
                 >
-                  Ruby
+                  Node
                 </List.Item>
                 <List.Item
                   as="a"

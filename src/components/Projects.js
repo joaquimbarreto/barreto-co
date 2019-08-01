@@ -65,7 +65,7 @@ const Projects = () => (
         <Button
           as="a"
           size="huge"
-          href="https://github.com/joaquimbarreto/pig-latin"
+          href="https://github.com/joaquimbarreto/task-manager"
           target="_blank"
         >
           Github
@@ -217,10 +217,10 @@ const Projects = () => (
               <List link inverted>
                 <List.Item
                   as="a"
-                  href="https://www.ruby-lang.org/"
+                  href="https://www.nodejs.org/"
                   target="_blank"
                 >
-                  Ruby
+                  Node
                 </List.Item>
                 <List.Item
                   as="a"

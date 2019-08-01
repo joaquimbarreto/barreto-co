@@ -144,10 +144,10 @@ const HomePage = () => (
               <List link inverted>
                 <List.Item
                   as="a"
-                  href="https://www.ruby-lang.org/"
+                  href="https://www.nodejs.org/"
                   target="_blank"
                 >
-                  Ruby
+                  Node
                 </List.Item>
                 <List.Item
                   as="a"
