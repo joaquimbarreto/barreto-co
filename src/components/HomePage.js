@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
+
 import {
   Button,
   Container,
@@ -22,8 +24,8 @@ const HomePage = () => (
               Welcome to Barreto.co(ding)
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              The website of Joaquim Barreto as a software developer and a
-              recent graduate of Flatiron's Software Engineering Programme.
+              The website of Joaquim Barreto as a junior software developer and
+              a recent graduate of Flatiron's Software Engineering Programme.
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
@@ -172,7 +174,7 @@ const HomePage = () => (
               <Header as="h4" inverted>
                 Joaquim Barreto
               </Header>
-              <p>Full-stack Software Developer.</p>
+              <p>Junior Full-stack Software Developer</p>
             </Grid.Column>
           </Grid.Row>
         </Grid>

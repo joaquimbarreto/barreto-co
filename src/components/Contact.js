@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   Button,
@@ -103,7 +104,7 @@ const Contact = () => (
               <Header as="h4" inverted>
                 Joaquim Barreto
               </Header>
-              <p>Full-stack Software Developer.</p>
+              <p>Junior Full-stack Software Developer</p>
             </Grid.Column>
           </Grid.Row>
         </Grid>

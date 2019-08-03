@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import {
   Button,
@@ -6,6 +8,7 @@ import {
   Grid,
   Header,
   List,
+  // eslint-disable-next-line no-unused-vars
   Segment
 } from "semantic-ui-react";
 import ResponsiveContainer from "../containers/ResponsiveContainer";
@@ -478,7 +481,7 @@ const CV = () => (
               <Header as="h4" inverted>
                 Joaquim Barreto
               </Header>
-              <p>Full-stack Software Developer.</p>
+              <p>Junior Full-stack Software Developer</p>
             </Grid.Column>
           </Grid.Row>
         </Grid>
