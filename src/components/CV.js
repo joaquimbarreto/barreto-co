@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import {
   Button,
@@ -8,7 +6,6 @@ import {
   Grid,
   Header,
   List,
-  // eslint-disable-next-line no-unused-vars
   Segment
 } from "semantic-ui-react";
 import ResponsiveContainer from "../containers/ResponsiveContainer";

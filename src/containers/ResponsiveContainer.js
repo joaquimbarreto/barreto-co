@@ -41,7 +41,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as="h2"
-      content="Full-stack Software Developer."
+      content="Junior Full-stack Software Developer"
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
