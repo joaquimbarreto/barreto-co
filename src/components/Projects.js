@@ -30,9 +30,9 @@ const Projects = () => (
         </Header>
         <p style={{ fontSize: "1.33em" }}>
           This website was a code challenge to create a website using PHP, MySQL
-          and Symphony CMS. Joaquim chose to learn those technogies as requested
-          in the challenge instead of using technologies already familiar with.
-          Hosted on a GoDaddy acount with its own domain:
+          and Symphony CMS. Joaquim chose to learn those technologies as
+          requested in the challenge instead of using technologies already
+          familiar with. Hosted on a GoDaddy acount with its own domain:
           www.phpmysqlsymphony.uk.
         </p>
         <Button
@@ -41,7 +41,7 @@ const Projects = () => (
           href="http://www.phpmysqlsymphony.uk"
           target="_blank"
         >
-          Open App
+          Open Website
         </Button>
         <Divider style={{ margin: "2em 1em" }} />
         <Header as="h3" style={{ fontSize: "2em" }}>
