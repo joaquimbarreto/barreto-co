@@ -31,13 +31,13 @@ const CV = () => (
               Statement
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              Full stack software developer with a passion for building
-              beautiful, fully functioning web apps. With experience in CSS,
-              Ruby on Rails, JavaScript, and React and a background in film,
-              photography and economics, I discovered web development through my
-              strong desire for continuing learning. I bring strong skills in
-              team-building and project management that help maximize growth
-              across all major goals.
+              Full-stack software engineer with a passion for building
+              beautiful, fully functioning web apps. With experience in Ruby on
+              Rails, PHP 7, JavaScript, and React and a background in film,
+              photography and economics, Joaquim discovered web development
+              through his strong desire for continuing learning. Joaquim brings
+              strong skills in team-building and project management that help
+              maximize growth across all major goals.
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -58,7 +58,9 @@ const CV = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               Tecnical Projects
             </Header>
-            <p style={{ fontSize: "1.33em" }}>Highlights of major projects.</p>
+            <p style={{ fontSize: "1.33em" }}>
+              Full-Stack Software Engineering
+            </p>
           </Grid.Column>
           <Grid.Column>
             <Grid.Row
@@ -253,7 +255,9 @@ const CV = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               Technical Skills
             </Header>
-            <p style={{ fontSize: "1.33em" }}>Software</p>
+            <p style={{ fontSize: "1.33em" }}>
+              Full-Stack Software Engineering
+            </p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row
@@ -263,9 +267,46 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                JavaScript, React.js, Node.js, Ruby, Rails, HTML, CSS
+                Back-End
               </Header>
-              <p style={{ fontSize: "1.33em" }}>PostgreSQL, SQLite3, MongoDB</p>
+              <p style={{ fontSize: "1.33em" }}>
+                Node.js, Rails, PHP 7, (C# & .NET coming soon)
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Front-End
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>HTML5, CSS3, React.js</p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Databases
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                PostgreSQL, SQLite3, MongoDB, MySQL
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Dev Ops (coming soon)
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>Kubernetes, Docker</p>
             </Grid.Row>
           </Grid.Column>
         </Grid.Row>
@@ -286,7 +327,7 @@ const CV = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               Employment History
             </Header>
-            <p style={{ fontSize: "1.33em" }}>China & UK.</p>
+            <p style={{ fontSize: "1.33em" }}>China & UK</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row
@@ -358,7 +399,7 @@ const CV = () => (
             <Header as="h3" style={{ fontSize: "2em" }}>
               Education
             </Header>
-            <p style={{ fontSize: "1.33em" }}>Australia & UK.</p>
+            <p style={{ fontSize: "1.33em" }}>Australia & UK</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row

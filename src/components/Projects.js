@@ -26,6 +26,25 @@ const Projects = () => (
           </Header>
         </Divider>
         <Header as="h3" style={{ fontSize: "2em" }}>
+          PHP MySQL Symphony CMS Website
+        </Header>
+        <p style={{ fontSize: "1.33em" }}>
+          This website was a code challenge to create a website using PHP, MySQL
+          and Symphony CMS. Joaquim chose to learn those technogies as requested
+          in the challenge instead of using technologies already familiar with.
+          Hosted on a GoDaddy acount with its own domain:
+          www.phpmysqlsymphony.uk.
+        </p>
+        <Button
+          as="a"
+          size="huge"
+          href="http://www.phpmysqlsymphony.uk"
+          target="_blank"
+        >
+          Open App
+        </Button>
+        <Divider style={{ margin: "2em 1em" }} />
+        <Header as="h3" style={{ fontSize: "2em" }}>
           Freelancer Booking App
         </Header>
         <p style={{ fontSize: "1.33em" }}>

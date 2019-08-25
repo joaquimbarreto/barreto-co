@@ -23,8 +23,9 @@ const HomePage = () => (
               Welcome to Barreto.co(ding)
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              The website of Joaquim Barreto as a junior software developer and
-              a recent graduate of Flatiron's Software Engineering Programme.
+              The website of Joaquim Barreto as a junior full-stack software
+              engineer and a graduate of Flatiron's Software Engineering
+              Programme.
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>

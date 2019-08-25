@@ -41,7 +41,7 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as="h2"
-      content="Junior Full-stack Software Developer"
+      content="Junior Full-Stack Software Engineer"
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
@@ -95,6 +95,9 @@ class DesktopContainer extends Component {
               <Container>
                 <Menu.Item as={Nav} to="/" name="home">
                   Home
+                </Menu.Item>
+                <Menu.Item as={Nav} to="/blogs" name="blogs">
+                  Blogs
                 </Menu.Item>
                 <Menu.Item
                   as="a"
