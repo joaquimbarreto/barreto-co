@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Divider, Grid, Header, Segment } from "semantic-ui-react";
 import ResponsiveContainer from "../containers/ResponsiveContainer";
 import Footer from "../containers/Footer";
+import { Link } from "react-router-dom";
 
 const CV = () => (
   <ResponsiveContainer>
@@ -194,39 +195,8 @@ const CV = () => (
                   fontSize: "2em"
                 }}
               >
-                House MD
+                <Link to="/projects">See All Projects</Link>
               </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                An app for users to diagnose symptoms.
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "1em"
-              }}
-              align="left"
-            >
-              <Grid.Column
-                textAlign="center"
-                style={{
-                  paddingBottom: "2em"
-                }}
-              >
-                <Button
-                  size="large"
-                  href="https://flatiron-house-md.herokuapp.com/"
-                  target="_blank"
-                >
-                  Open App
-                </Button>
-                <Button
-                  size="large"
-                  href="https://github.com/joaquimbarreto/flatiron-house-md"
-                  target="_blank"
-                >
-                  Github
-                </Button>
-              </Grid.Column>
             </Grid.Row>
           </Grid.Column>
         </Grid.Row>
