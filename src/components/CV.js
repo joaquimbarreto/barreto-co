@@ -304,9 +304,22 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                Dev Ops (coming soon)
+                TDD
               </Header>
-              <p style={{ fontSize: "1.33em" }}>Kubernetes, Docker</p>
+              <p style={{ fontSize: "1.33em" }}>
+                Jest
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Dev Ops
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>Heroku, Netlify, (Kubernetes & Docker coming soon)</p>
             </Grid.Row>
           </Grid.Column>
         </Grid.Row>

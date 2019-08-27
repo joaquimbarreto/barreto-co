@@ -39,7 +39,7 @@ const Projects = () => (
           href="http://www.fullstacksoftware.engineer"
           target="_blank"
         >
-          Open Blog
+          fullstacksoftware.engineer
         </Button>
         <Divider style={{ margin: "2em 1em" }} />
         <Header as="h3" style={{ fontSize: "2em" }}>
@@ -55,7 +55,7 @@ const Projects = () => (
           href="http://www.kubernetesdocker.engineer"
           target="_blank"
         >
-          Open Blog
+          kubernetesdocker.engineer
         </Button>
       </Container>
     </Segment>
