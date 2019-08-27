@@ -28,24 +28,22 @@ const Footer = () => (
               </List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column width={3}>
-            <Header inverted as="h4" content="Technologies" />
+          <Grid.Column width={5}>
+            <Header inverted as="h4" content="Blogs" />
             <List link inverted>
-              <List.Item as="a" href="https://www.nodejs.org/" target="_blank">
-                Node
-              </List.Item>
-              <List.Item as="a" href="https://rubyonrails.org/" target="_blank">
-                Ruby on Rails
+              <List.Item
+                as="a"
+                href="https://fullstacksoftware.engineer"
+                target="_blank"
+              >
+                fullstacksoftware.engineer
               </List.Item>
               <List.Item
                 as="a"
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                href="https://kubernetesdocker.engineer"
                 target="_blank"
               >
-                Javascript
-              </List.Item>
-              <List.Item as="a" href="https://reactjs.org/" target="_blank">
-                React
+                kubernetesdocker.engineer
               </List.Item>
             </List>
           </Grid.Column>
