@@ -280,7 +280,7 @@ const CV = () => (
                 Dev Ops
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Heroku, Netlify, (Kubernetes & Docker coming soon)
+                Heroku, Netlify, (Ansible, Kubernetes & Docker coming soon)
               </p>
             </Grid.Row>
           </Grid.Column>
