@@ -232,7 +232,7 @@ const CV = () => (
                 Back-End
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Node.js, Rails, PHP 7, (C# & .NET coming soon)
+                Node.js, Rails, PHP 7, C# & ASP.NET
               </p>
             </Grid.Row>
             <Grid.Row
@@ -244,7 +244,9 @@ const CV = () => (
               <Header as="h3" style={{ fontSize: "2em" }}>
                 Front-End
               </Header>
-              <p style={{ fontSize: "1.33em" }}>HTML5, CSS3, React.js</p>
+              <p style={{ fontSize: "1.33em" }}>
+                HTML5, CSS3, React.js, AngularJS, TypeScript
+              </p>
             </Grid.Row>
             <Grid.Row
               style={{
