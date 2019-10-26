@@ -232,7 +232,7 @@ const CV = () => (
                 Back-End
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Node.js, Rails, PHP 7, C# & ASP.NET
+                Node.js, C#, ASP.NET, Java, Spring Framework
               </p>
             </Grid.Row>
             <Grid.Row
@@ -307,6 +307,24 @@ const CV = () => (
             <p style={{ fontSize: "1.33em" }}>China & UK</p>
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                Investech-Blue, Rome, Italy
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i>October 2018 - Present</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
+                Junior Software Engineer`
+              </p>
+            </Grid.Row>
             <Grid.Row
               style={{
                 paddingBottom: "2em"
