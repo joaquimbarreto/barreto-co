@@ -332,15 +332,15 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                Barreto.film, London, UK
+                Barreto.photography, London, UK
               </Header>
               <p style={{ fontSize: "1.33em" }}>
                 <strong>
-                  <i>March 2005 - October 2018</i>
+                  <i>July 2003 - October 2018</i>
                 </strong>
               </p>
               <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
-                Filmmaker
+                Photographer
               </p>
             </Grid.Row>
             <Grid.Row
@@ -350,14 +350,16 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
-                Barreto.photography & Barreto.video, London, UK
+                Barreto.film & Barreto.video, London, UK
               </Header>
               <p style={{ fontSize: "1.33em" }}>
                 <strong>
-                  <i>July 2003 - October 2018</i>
+                  <i>March 2005- October 2018</i>
                 </strong>
               </p>
-              <p style={{ fontSize: "1.33em" }}>Photographer</p>
+              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
+                Filmmaker
+              </p>
             </Grid.Row>
             <Grid.Row
               style={{
@@ -373,7 +375,9 @@ const CV = () => (
                   <i> July 1999 - June 2003</i>
                 </strong>
               </p>
-              <p style={{ fontSize: "1.33em" }}>Economist</p>
+              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
+                Economist
+              </p>
             </Grid.Row>
           </Grid.Column>
         </Grid.Row>
