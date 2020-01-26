@@ -245,7 +245,8 @@ const CV = () => (
                 Front-End
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                HTML5, CSS3, React.js, AngularJS, TypeScript
+                React.js, Angular 8, TypeScript, (Blazor WebAssembly coming
+                soon)
               </p>
             </Grid.Row>
             <Grid.Row
@@ -270,7 +271,7 @@ const CV = () => (
               <Header as="h3" style={{ fontSize: "2em" }}>
                 TDD
               </Header>
-              <p style={{ fontSize: "1.33em" }}>Jest</p>
+              <p style={{ fontSize: "1.33em" }}>Jest, Jasmine</p>
             </Grid.Row>
             <Grid.Row
               style={{
@@ -314,15 +315,33 @@ const CV = () => (
               align="left"
             >
               <Header as="h3" style={{ fontSize: "2em" }}>
+                Softwave-Soltec, Rome, Italy
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <strong>
+                  <i>January 2020 - Present</i>
+                </strong>
+              </p>
+              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
+                Junior Full-Stack Software Engineer
+              </p>
+            </Grid.Row>
+            <Grid.Row
+              style={{
+                paddingBottom: "2em"
+              }}
+              align="left"
+            >
+              <Header as="h3" style={{ fontSize: "2em" }}>
                 Investech-Blue, Rome, Italy
               </Header>
               <p style={{ fontSize: "1.33em" }}>
                 <strong>
-                  <i>October 2018 - Present</i>
+                  <i>October 2019 - December 2019</i>
                 </strong>
               </p>
               <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
-                Junior Software Engineer`
+                Junior Software Engineer
               </p>
             </Grid.Row>
             <Grid.Row
