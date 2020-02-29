@@ -20,12 +20,13 @@ const HomePage = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              Welcome to Barreto.co(ding)
+              CV Website of Joaquim Barreto
             </Header>
+
             <p style={{ fontSize: "1.33em" }}>
-              The website of Joaquim Barreto as a junior full-stack software
-              engineer and a graduate of Flatiron's Software Engineering
-              Programme.
+              Welcome. Joaquim currently works as a junior full-stack software
+              engineer at Softwave-Soltec embedded with Conte.it insurance
+              company.
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>

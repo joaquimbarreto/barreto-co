@@ -109,6 +109,9 @@ class DesktopContainer extends Component {
                 <Menu.Item as={Nav} to="/projects" name="projects">
                   Projects
                 </Menu.Item>
+                <Menu.Item as={Nav} to="/languages" name="languages">
+                  Languages
+                </Menu.Item>
                 <Menu.Item as={Nav} to="/cv" name="cv">
                   CV
                 </Menu.Item>
@@ -176,6 +179,9 @@ class MobileContainer extends Component {
           </Menu.Item>
           <Menu.Item as={Link} to="projects">
             Projects
+          </Menu.Item>
+          <Menu.Item as={Link} to="languages">
+            Languages
           </Menu.Item>
           <Menu.Item as={Link} to="cv">
             CV

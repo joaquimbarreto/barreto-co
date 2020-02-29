@@ -6,6 +6,7 @@ import Blogs from "./components/Blogs";
 import CV from "./components/CV";
 import Contact from "./components/Contact";
 import { Route, Switch, withRouter } from "react-router-dom";
+import Languages from "./components/Languages";
 
 class App extends Component {
   render() {
@@ -17,6 +18,10 @@ class App extends Component {
             path="/projects"
             component={routerProps => <Projects {...routerProps} />}
           />
+          <Route
+          path="/languages"
+          component={routerProps => <Languages {...routerProps} />}
+        />
           <Route
             path="/cv"
             component={routerProps => <CV {...routerProps} />}

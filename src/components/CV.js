@@ -232,7 +232,7 @@ const CV = () => (
                 Back-End
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Node.js, C#, ASP.NET, Java, Spring Framework
+                Node.js, C#, ASP.NET, (Blazor Server coming soon)
               </p>
             </Grid.Row>
             <Grid.Row
@@ -245,7 +245,7 @@ const CV = () => (
                 Front-End
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                React.js, Angular 8, TypeScript, (Blazor WebAssembly coming
+                React.js, Angular 9, TypeScript, (Blazor WebAssembly coming
                 soon)
               </p>
             </Grid.Row>
@@ -271,7 +271,7 @@ const CV = () => (
               <Header as="h3" style={{ fontSize: "2em" }}>
                 TDD
               </Header>
-              <p style={{ fontSize: "1.33em" }}>Jest, Jasmine</p>
+              <p style={{ fontSize: "1.33em" }}>Jest, Jasmine, Karma, Travis</p>
             </Grid.Row>
             <Grid.Row
               style={{
@@ -283,7 +283,7 @@ const CV = () => (
                 Dev Ops
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Heroku, Netlify, (Ansible, Kubernetes & Docker coming soon)
+                Heroku, Netlify, (Kubernetes & Docker coming soon)
               </p>
             </Grid.Row>
           </Grid.Column>
