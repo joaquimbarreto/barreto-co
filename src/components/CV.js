@@ -25,8 +25,8 @@ const CV = () => (
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               Full-stack software engineer with a passion for building
-              beautiful, fully functioning web apps. With experience in Ruby on
-              Rails, PHP 7, JavaScript, and React and a background in film,
+              beautiful, fully functioning web apps. With experience in Angular
+              9, JavaScript, and Kubernetes and a background in film,
               photography and economics, Joaquim discovered web development
               through his strong desire for continuing learning. Joaquim brings
               strong skills in team-building and project management that help
@@ -59,13 +59,13 @@ const CV = () => (
             <Grid.Row
               align="left"
               style={{
-                paddingBottom: "1em"
+                paddingBottom: "1em",
               }}
             >
               <Header
                 as="h3"
                 style={{
-                  fontSize: "2em"
+                  fontSize: "2em",
                 }}
               >
                 Freelancer Booking App
@@ -76,14 +76,14 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "1em"
+                paddingBottom: "1em",
               }}
               align="left"
             >
               <Grid.Column
                 textAlign="center"
                 style={{
-                  paddingBottom: "2em"
+                  paddingBottom: "2em",
                 }}
               >
                 <Button
@@ -98,13 +98,13 @@ const CV = () => (
             <Grid.Row
               align="left"
               style={{
-                paddingBottom: "1em"
+                paddingBottom: "1em",
               }}
             >
               <Header
                 as="h3"
                 style={{
-                  fontSize: "2em"
+                  fontSize: "2em",
                 }}
               >
                 MERN Task Manager App
@@ -116,14 +116,14 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "1em"
+                paddingBottom: "1em",
               }}
               align="left"
             >
               <Grid.Column
                 textAlign="center"
                 style={{
-                  paddingBottom: "2em"
+                  paddingBottom: "2em",
                 }}
               >
                 <Button
@@ -144,7 +144,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "1em"
+                paddingBottom: "1em",
               }}
               align="left"
             >
@@ -157,14 +157,14 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "1em"
+                paddingBottom: "1em",
               }}
               align="left"
             >
               <Grid.Column
                 textAlign="center"
                 style={{
-                  paddingBottom: "2em"
+                  paddingBottom: "2em",
                 }}
               >
                 <Button
@@ -186,13 +186,13 @@ const CV = () => (
             <Grid.Row
               align="left"
               style={{
-                paddingBottom: "1em"
+                paddingBottom: "1em",
               }}
             >
               <Header
                 as="h3"
                 style={{
-                  fontSize: "2em"
+                  fontSize: "2em",
                 }}
               >
                 <Link to="/projects">See All Projects</Link>
@@ -224,7 +224,7 @@ const CV = () => (
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -237,7 +237,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -251,7 +251,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -264,7 +264,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -275,7 +275,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -283,7 +283,7 @@ const CV = () => (
                 Dev Ops
               </Header>
               <p style={{ fontSize: "1.33em" }}>
-                Heroku, Netlify, (Kubernetes & Docker coming soon)
+                Heroku, Netlify, Kubernetes & Docker
               </p>
             </Grid.Row>
           </Grid.Column>
@@ -310,7 +310,7 @@ const CV = () => (
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -328,7 +328,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -346,7 +346,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -364,7 +364,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -382,7 +382,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -422,7 +422,7 @@ const CV = () => (
           <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -441,7 +441,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
@@ -459,7 +459,7 @@ const CV = () => (
             </Grid.Row>
             <Grid.Row
               style={{
-                paddingBottom: "2em"
+                paddingBottom: "2em",
               }}
               align="left"
             >
