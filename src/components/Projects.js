@@ -17,7 +17,6 @@ const Projects = () => (
             Featured Projects
           </Header>
         </Divider>
-        <Divider style={{ margin: "2em 1em" }} />
         <Header as="h3" style={{ fontSize: "2em" }}>
           Freelancer Booking App
         </Header>

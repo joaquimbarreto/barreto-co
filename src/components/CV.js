@@ -171,8 +171,9 @@ const CV = () => (
                   size="large"
                   href="https://www.piglatin.app"
                   target="_blank"
+                  disabled="true"
                 >
-                  Open App
+                  Coming Soon
                 </Button>
                 <Button
                   size="large"
