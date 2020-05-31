@@ -68,9 +68,9 @@ const Projects = () => (
         </Header>
         <p style={{ fontSize: "1.33em" }}>
           This app is a result of Joaquim's attempt to do the infamous pig latin
-          translation code challenge. This app was done by using React Hooks
-          (useState and useEfect) on the frontend and Ruby on Rails (5.2) on the
-          backend. Deployed on Heroku with it own domain: www.piglatin.app.
+          translation code challenge. This app is currently being turned into a
+          MEAN stack using NgRX and deployed in Digital Ocean using a Kubernetes
+          cluster with it own domain: www.piglatin.app.
         </p>
         <Button
           as="a"
