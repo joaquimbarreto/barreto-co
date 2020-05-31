@@ -177,7 +177,7 @@ const CV = () => (
                 </Button>
                 <Button
                   size="large"
-                  href="https://github.com/joaquimbarreto/pig-latin"
+                  href="https://github.com/joaquimbarreto/pig-latin-MEAN"
                   target="_blank"
                 >
                   Github

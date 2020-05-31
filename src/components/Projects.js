@@ -84,7 +84,7 @@ const Projects = () => (
         <Button
           as="a"
           size="huge"
-          href="https://github.com/joaquimbarreto/pig-latin"
+          href="https://github.com/joaquimbarreto/pig-latin-MEAN"
           target="_blank"
         >
           Github
