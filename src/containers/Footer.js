@@ -1,9 +1,9 @@
-import React from "react";
-import { Container, Grid, Header, List, Segment } from "semantic-ui-react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Container, Grid, Header, List, Segment } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
-  <Segment inverted vertical style={{ padding: "5em 0em" }}>
+  <Segment inverted vertical style={{ padding: '5em 0em' }}>
     <Container>
       <Grid divided inverted stackable>
         <Grid.Row>
@@ -37,13 +37,6 @@ const Footer = () => (
                 target="_blank"
               >
                 fullstacksoftware.engineer
-              </List.Item>
-              <List.Item
-                as="a"
-                href="https://kubernetesdocker.engineer"
-                target="_blank"
-              >
-                kubernetesdocker.engineer
               </List.Item>
             </List>
           </Grid.Column>
