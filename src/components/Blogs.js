@@ -33,22 +33,6 @@ const Projects = () => (
         >
           fullstacksoftware.engineer
         </Button>
-        <Divider style={{ margin: "2em 1em" }} />
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          Adventures in Kubernetes & Docker
-        </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          Joaquim's epic journey into the world of building a kubernetes cluster
-          using Raspberry Pi.
-        </p>
-        <Button
-          as="a"
-          size="huge"
-          href="https://www.kubernetesdocker.engineer"
-          target="_blank"
-        >
-          kubernetesdocker.engineer
-        </Button>
       </Container>
     </Segment>
     <Footer />

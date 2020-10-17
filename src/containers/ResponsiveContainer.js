@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import {
   Button,
   Container,
@@ -9,15 +9,15 @@ import {
   Responsive,
   Segment,
   Sidebar,
-  Visibility
-} from "semantic-ui-react";
-import { NavLink, Link } from "react-router-dom";
+  Visibility,
+} from 'semantic-ui-react';
+import { NavLink, Link } from 'react-router-dom';
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
 const getWidth = () => {
-  const isSSR = typeof window === "undefined";
+  const isSSR = typeof window === 'undefined';
 
   return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;
 };
@@ -33,10 +33,10 @@ const HomepageHeading = ({ mobile }) => (
       content="Joaquim Barreto"
       inverted
       style={{
-        fontSize: mobile ? "2em" : "4em",
-        fontWeight: "normal",
+        fontSize: mobile ? '2em' : '4em',
+        fontWeight: 'normal',
         marginBottom: 0,
-        marginTop: mobile ? "1.5em" : "1em"
+        marginTop: mobile ? '1.5em' : '1em',
       }}
     />
     <Header
@@ -44,16 +44,16 @@ const HomepageHeading = ({ mobile }) => (
       content="Junior Full-Stack Software Engineer"
       inverted
       style={{
-        fontSize: mobile ? "1.5em" : "1.7em",
-        fontWeight: "normal",
-        marginTop: mobile ? "0.5em" : "1.4em"
+        fontSize: mobile ? '1.5em' : '1.7em',
+        fontWeight: 'normal',
+        marginTop: mobile ? '0.5em' : '1.4em',
       }}
     />
   </Container>
 );
 
 HomepageHeading.propTypes = {
-  mobile: PropTypes.bool
+  mobile: PropTypes.bool,
 };
 
 /* Heads up!
@@ -70,7 +70,9 @@ class DesktopContainer extends Component {
     const { children } = this.props;
     const { fixed } = this.state;
 
-    const Nav = props => <NavLink exact {...props} activeClassName="active" />;
+    const Nav = (props) => (
+      <NavLink exact {...props} activeClassName="active" />
+    );
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
@@ -82,11 +84,11 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 400, padding: "1em 0em" }}
+            style={{ minHeight: 400, padding: '1em 0em' }}
             vertical
           >
             <Menu
-              fixed={fixed ? "top" : null}
+              fixed={fixed ? 'top' : null}
               inverted={!fixed}
               pointing={!fixed}
               secondary={!fixed}
@@ -97,7 +99,7 @@ class DesktopContainer extends Component {
                   Home
                 </Menu.Item>
                 <Menu.Item as={Nav} to="/blogs" name="blogs">
-                  Blogs
+                  Blog
                 </Menu.Item>
                 <Menu.Item
                   as="a"
@@ -121,7 +123,7 @@ class DesktopContainer extends Component {
                     to="contact"
                     inverted={!fixed}
                     primary={fixed}
-                    style={{ marginLeft: "0.5em" }}
+                    style={{ marginLeft: '0.5em' }}
                   >
                     Contact Me
                   </Button>
@@ -139,7 +141,7 @@ class DesktopContainer extends Component {
 }
 
 DesktopContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 class MobileContainer extends Component {
@@ -180,6 +182,9 @@ class MobileContainer extends Component {
           <Menu.Item as={Link} to="projects">
             Projects
           </Menu.Item>
+          <Menu.Item as={Link} to="blogs">
+            Blogs
+          </Menu.Item>
           <Menu.Item as={Link} to="languages">
             Languages
           </Menu.Item>
@@ -195,7 +200,7 @@ class MobileContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 350, padding: "1em 0em" }}
+            style={{ minHeight: 350, padding: '1em 0em' }}
             vertical
           >
             <Container>
@@ -208,7 +213,7 @@ class MobileContainer extends Component {
                     as={Link}
                     to="contact"
                     inverted
-                    style={{ marginLeft: "0.5em" }}
+                    style={{ marginLeft: '0.5em' }}
                   >
                     Contact Me
                   </Button>
@@ -226,7 +231,7 @@ class MobileContainer extends Component {
 }
 
 MobileContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 const ResponsiveContainer = ({ children }) => (
@@ -237,7 +242,7 @@ const ResponsiveContainer = ({ children }) => (
 );
 
 ResponsiveContainer.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default ResponsiveContainer;
