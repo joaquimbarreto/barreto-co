@@ -39,5 +39,10 @@
   "uk": "UK",
   "london": "London",
   "rome": "Rome",
-  "china": "China"
+  "china": "China",
+  "english": "English",
+  "italian": "Italian",
+  "mandarin": "Mandarin",
+  "japanese": "Japanese",
+  "portuguese": "Portuguese"
 }
