@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-  Button,
   Container,
   Divider,
   Grid,
@@ -48,7 +47,7 @@ const HomePage = () => {
                 Curriculum Vitae
               </Header>
               <p style={{ fontSize: '1.33em' }}>
-                Click <Link to="/cv">here</Link> to see Joaquim's CV.
+                Click <Link to="/cv">{t('here')}</Link> {t('see_cv')}
               </p>
             </Grid.Column>
             <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -68,54 +67,29 @@ const HomePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  here
+                  {t('here')}
                 </a>{' '}
-                to see all repositories.
+                {t('see_repositories')}
               </p>
             </Grid.Column>
           </Grid.Row>
         </Grid>
       </Segment>
-      <Segment style={{ padding: '8em 0em' }} vertical>
+      <Segment style={{ padding: '4em 0em' }} vertical>
         <Container text>
-          <Header as="h3" style={{ fontSize: '2em' }}>
-            Freelancer Booking App
+          <Header as="h4" style={{ fontSize: '3em' }}>
+            {t('professional_experience')}
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            This app was Joaquim's final project at Flatiron School. It uses
-            Ruby on Rails with ActiveAdmin on the backend with Javascript and
-            React on the front end. Deployed on Heroku with it own domain:
-            www.freelancerbooking.app.
-          </p>
-          <Button as="a" size="large" href="http://www.freelancerbooking.app">
-            Open App
-          </Button>
-          <Divider
-            as="h4"
-            className="header"
-            horizontal
-            style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-          >
-            <Link to="/projects">Other Projects</Link>
-          </Divider>
+          <Divider style={{ margin: '2em 1em' }} />
           <Header as="h3" style={{ fontSize: '2em' }}>
-            Pig Latin Translator App
+            Enel X
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            This app is a result of Joaquim's attempt to do the infamous pig
-            latin translation code challenge. This app was done by using React
-            Hooks (useState and useEfect) on the frontend and Ruby on Rails
-            (5.2) on the backend. Deployed on Heroku with it own domain:
-            www.piglatin.app.
-          </p>
-          <Button
-            as="a"
-            size="large"
-            href="https://www.piglatin.app"
-            target="_blank"
-          >
-            Open App
-          </Button>
+          <p style={{ fontSize: '1.33em' }}>{t('enel_x_desc')}</p>
+          <Divider style={{ margin: '2em 1em' }} />
+          <Header as="h3" style={{ fontSize: '2em' }}>
+            Conte.it
+          </Header>
+          <p style={{ fontSize: '1.33em' }}>{t('conte_it_desc')}</p>
         </Container>
       </Segment>
       <Footer />

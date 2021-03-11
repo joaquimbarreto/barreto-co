@@ -22,16 +22,18 @@ const Languages = [
 const DropdownLanguageSelection = () => {
   const { i18n } = useTranslation();
 
+  const currentLanguage = i18n.language;
+
   const handleChange = (e, data) => {
     i18n.changeLanguage(data.value);
   };
 
   return (
     <Dropdown
-      defaultValue="it"
       onChange={handleChange}
       fluid
       selection
+      value={currentLanguage}
       options={Languages}
     />
   );

@@ -9,18 +9,12 @@ const Projects = () => {
 
   return (
     <ResponsiveContainer>
-      <Segment style={{ padding: '8em 0em' }} vertical>
+      <Segment style={{ padding: '4em 0em' }} vertical>
         <Container text>
-          <Divider
-            as="h4"
-            className="header"
-            horizontal
-            style={{ margin: '2em 0em', textTransform: 'uppercase' }}
-          >
-            <Header as="h1" style={{ fontSize: '3em' }}>
-              Featured Projects
-            </Header>
-          </Divider>
+          <Header as="h1" style={{ fontSize: '3em' }}>
+            {t('featured_projects')}
+          </Header>
+          <Divider style={{ margin: '2em 1em' }} />
           <Header as="h3" style={{ fontSize: '2em' }}>
             Freelancer Booking App
           </Header>
@@ -37,12 +31,7 @@ const Projects = () => {
           <Header as="h3" style={{ fontSize: '2em' }}>
             MERN Task Manager App
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            This app is a simple task manager. The technogies used in the
-            back-end are Node.js, Express.js and Mongoose.js. The front-end was
-            done in React.js. The choosen database is MongoDB and authentication
-            done with JWT. Deployed on Heroku.
-          </p>
+          <p style={{ fontSize: '1.33em' }}>{t('mern_desc')}</p>
           <Button
             as="a"
             size="huge"
@@ -63,21 +52,7 @@ const Projects = () => {
           <Header as="h3" style={{ fontSize: '2em' }}>
             Pig Latin Translator App
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            This app is a result of Joaquim's attempt to do the infamous pig
-            latin translation code challenge. This app is currently being turned
-            into a MEAN stack using NgRX and deployed in Digital Ocean using a
-            Kubernetes cluster with it own domain: www.piglatin.app.
-          </p>
-          <Button
-            as="a"
-            size="huge"
-            href="https://www.piglatin.app"
-            target="_blank"
-            disabled="true"
-          >
-            Coming Soon
-          </Button>
+          <p style={{ fontSize: '1.33em' }}>{t('pig_latin_desc')}</p>
           <Button
             as="a"
             size="huge"
@@ -90,12 +65,7 @@ const Projects = () => {
           <Header as="h3" style={{ fontSize: '2em' }}>
             How To Do Things In Life
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            A fun app and the idea just came to me. Everyone always have this
-            dilemma when making decisions. No longer! As this app will help in
-            every decision one makes. I did this app using React Hooks (useState
-            and useEfect) on the frontend. Deployed on Netlify.
-          </p>
+          <p style={{ fontSize: '1.33em' }}>{t('htotil_desc')}</p>
           <Button
             as="a"
             size="huge"
@@ -116,12 +86,7 @@ const Projects = () => {
           <Header as="h3" style={{ fontSize: '2em' }}>
             House MD
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            This app was a pair programming project during Module 2 at Flatiron
-            School. It is an app for users to diagnose symptoms on their bodies.
-            The app uses on Ruby on Rails on the backend with Javascript and
-            React on the frontend. Deployed on Heroku.
-          </p>
+          <p style={{ fontSize: '1.33em' }}>{t('house_md_desc')}</p>
           <Button
             as="a"
             size="huge"
@@ -142,12 +107,7 @@ const Projects = () => {
           <Header as="h3" style={{ fontSize: '2em' }}>
             Flatiron - Student Attendance Score Sheet
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            This app was Joaquim's pair programming project during Module 3 at
-            Flatiron School. An app to for school tutors to record students’
-            attendance. It uses Ruby on Rails on the backend with Javascript on
-            the front end.
-          </p>
+          <p style={{ fontSize: '1.33em' }}>{t('flatiron_sass_desc')}</p>
           <Button
             as="a"
             size="huge"
@@ -160,13 +120,7 @@ const Projects = () => {
           <Header as="h3" style={{ fontSize: '2em' }}>
             Studio Darkroom Workshop App
           </Header>
-          <p style={{ fontSize: '1.33em' }}>
-            This booking app was a pair programming project during Module 2 at
-            Flatiron School. It is an app for users to book space in Pullen's
-            yards for film and photography purposes. The app uses on Ruby on
-            Rails with Bootstrap CSS. Deployed on Heroku.
-          </p>
-          <p>(Login details - username: joaquim, password: password)</p>
+          <p style={{ fontSize: '1.33em' }}>{t('sdw_app_desc')}</p>
           <Button
             as="a"
             size="huge"

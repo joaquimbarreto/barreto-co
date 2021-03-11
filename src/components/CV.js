@@ -10,22 +10,16 @@ const CV = () => {
 
   return (
     <ResponsiveContainer>
-      <Segment style={{ padding: '8em 0em' }} vertical>
-        <Divider
-          as="h4"
-          className="header"
-          horizontal
-          style={{ margin: '2em 0em', textTransform: 'uppercase' }}
-        >
-          <Header as="h1" style={{ fontSize: '3em' }}>
-            Curriculum Vitae
-          </Header>
-        </Divider>
+      <Segment style={{ padding: '4em 0em' }} vertical>
         <Grid container celled="internally" stackable verticalAlign="middle">
           <Grid.Row>
             <Grid.Column>
+              <Header as="h1" style={{ fontSize: '3em' }}>
+                Curriculum Vitae
+              </Header>
+              <Divider style={{ margin: '2em 1em' }} />
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Statement
+                {t('statement_title')}
               </Header>
               <p style={{ fontSize: '1.33em' }}>{t('statement')}</p>
             </Grid.Column>
@@ -45,7 +39,7 @@ const CV = () => {
               style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Tecnical Projects
+                {t('technical_projects')}
               </Header>
               <p style={{ fontSize: '1.33em' }}>
                 Full-Stack Software Engineering
@@ -66,9 +60,7 @@ const CV = () => {
                 >
                   Freelancer Booking App
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>
-                  An app for a freelancer to let clients book their services.
-                </p>
+                <p style={{ fontSize: '1.33em' }}>{t('fba_blurb')}</p>
               </Grid.Row>
               <Grid.Row
                 style={{
@@ -105,10 +97,7 @@ const CV = () => {
                 >
                   MERN Task Manager App
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>
-                  A simple task manager app done in MongoDB, Express, React and
-                  Node.
-                </p>
+                <p style={{ fontSize: '1.33em' }}>{t('mern_blurb')}</p>
               </Grid.Row>
               <Grid.Row
                 style={{
@@ -147,9 +136,7 @@ const CV = () => {
                 <Header as="h3" style={{ fontSize: '2em' }}>
                   Pig Latin Translator App
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>
-                  An app to translate any text to pig latin.
-                </p>
+                <p style={{ fontSize: '1.33em' }}>{t('pig_latin_blurb')}</p>
               </Grid.Row>
               <Grid.Row
                 style={{
@@ -163,14 +150,6 @@ const CV = () => {
                     paddingBottom: '2em',
                   }}
                 >
-                  <Button
-                    size="large"
-                    href="https://www.piglatin.app"
-                    target="_blank"
-                    disabled="true"
-                  >
-                    Coming Soon
-                  </Button>
                   <Button
                     size="large"
                     href="https://github.com/joaquimbarreto/pig-latin-MEAN"
@@ -192,7 +171,7 @@ const CV = () => {
                     fontSize: '2em',
                   }}
                 >
-                  <Link to="/projects">See All Projects</Link>
+                  <Link to="/projects">{t('see_all_projects')}</Link>
                 </Header>
               </Grid.Row>
             </Grid.Column>
@@ -212,7 +191,7 @@ const CV = () => {
               style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Technical Skills
+                {t('technical_skills')}
               </Header>
               <p style={{ fontSize: '1.33em' }}>
                 Full-Stack Software Engineering
@@ -226,10 +205,11 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Back-End
+                  Front-End
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  Node.js, C#, ASP.NET, (Blazor Server coming soon)
+                  React.js, Angular 2+, JavaScript, TypeScript, (Blazor
+                  WebAssembly {t('coming_soon')})
                 </p>
               </Grid.Row>
               <Grid.Row
@@ -239,11 +219,23 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Front-End
+                  Back-End
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
-                  React.js, Angular 9, TypeScript, (Blazor WebAssembly coming
-                  soon)
+                  Node.js, C#, ASP.NET, (Blazor Server {t('coming_soon')})
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Mobile
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  (Kotlin {t('coming_soon')})
                 </p>
               </Grid.Row>
               <Grid.Row
@@ -281,9 +273,7 @@ const CV = () => {
                 <Header as="h3" style={{ fontSize: '2em' }}>
                   Dev Ops
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>
-                  Heroku, Netlify, Kubernetes & Docker
-                </p>
+                <p style={{ fontSize: '1.33em' }}>Kubernetes & Docker</p>
               </Grid.Row>
             </Grid.Column>
           </Grid.Row>
@@ -302,9 +292,11 @@ const CV = () => {
               style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Employment History
+                {t('employment_history')}
               </Header>
-              <p style={{ fontSize: '1.33em' }}>China & UK</p>
+              <p style={{ fontSize: '1.33em' }}>
+                {t('china')} & {t('uk')}
+              </p>
             </Grid.Column>
             <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
               <Grid.Row
@@ -314,15 +306,17 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Softwave-Soltec, Rome, Italy
+                  Softwave-Soltec, {t('rome')}, {t('italy')}
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>
-                    <i>January 2020 - Present</i>
+                    <i>
+                      {t('january')} 2020 - {t('present')}
+                    </i>
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
-                  Junior Full-Stack Software Engineer
+                  {t('job_title')}
                 </p>
               </Grid.Row>
               <Grid.Row
@@ -332,15 +326,17 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Investech-Blue, Rome, Italy
+                  Investech-Blue, {t('rome')}, {t('italy')}
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>
-                    <i>October 2019 - December 2019</i>
+                    <i>
+                      {t('october')} 2019 - {t('december')} 2019
+                    </i>
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
-                  Junior Software Engineer
+                  {t('job_title')}
                 </p>
               </Grid.Row>
               <Grid.Row
@@ -350,15 +346,17 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Barreto.photography, London, UK
+                  Barreto.photography, {t('london')}, {t('uk')}
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>
-                    <i>July 2003 - October 2018</i>
+                    <i>
+                      {t('july')} 2003 - {t('october')} 2018
+                    </i>
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
-                  Photographer
+                  {t('photographer')}
                 </p>
               </Grid.Row>
               <Grid.Row
@@ -368,11 +366,13 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Barreto.film & Barreto.video, London, UK
+                  Barreto.film & Barreto.video, {t('london')}, {t('uk')}
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>
-                    <i>March 2005- October 2018</i>
+                    <i>
+                      {t('march')} 2005- {t('october')} 2018
+                    </i>
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
@@ -386,15 +386,19 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Bureau of Finance, Government of Macau (DSF), Macau, China
+                  Bureau of Finance, Government of Macau (DSF), Macau,{' '}
+                  {t('china')}
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>
-                    <i> July 1999 - June 2003</i>
+                    <i>
+                      {' '}
+                      {t('july')} 1999 - {t('june')} 2003
+                    </i>
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
-                  Economist
+                  {t('economist')}
                 </p>
               </Grid.Row>
             </Grid.Column>
@@ -414,9 +418,9 @@ const CV = () => {
               style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Education
+                {t('education')}
               </Header>
-              <p style={{ fontSize: '1.33em' }}>Australia & UK</p>
+              <p style={{ fontSize: '1.33em' }}>Australia & {t('uk')}</p>
             </Grid.Column>
             <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
               <Grid.Row
@@ -426,7 +430,7 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  Flatiron School - London, UK
+                  Flatiron School - {t('london')}, {t('uk')}
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>
@@ -445,7 +449,7 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  University of the Arts, London - London, UK
+                  University of the Arts, London - {t('london')}, {t('uk')}
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>

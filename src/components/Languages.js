@@ -22,9 +22,9 @@ const Languages = () => {
               style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Advance
+                {t('advance')}
               </Header>
-              <p style={{ fontSize: '1.33em' }}>Mother-tongue Level</p>
+              <p style={{ fontSize: '1.33em' }}>{t('mother_tongue_level')}</p>
             </Grid.Column>
             <Grid.Column>
               <Grid.Row
@@ -41,7 +41,7 @@ const Languages = () => {
                 >
                   {t('english')}
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>University Level</p>
+                <p style={{ fontSize: '1.33em' }}>{t('university_level')}</p>
               </Grid.Row>
             </Grid.Column>
           </Grid.Row>
@@ -60,9 +60,9 @@ const Languages = () => {
               style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Intermediate
+                {t('intermediate')}
               </Header>
-              <p style={{ fontSize: '1.33em' }}>High School Level</p>
+              <p style={{ fontSize: '1.33em' }}>{t('high_school_level')}</p>
             </Grid.Column>
             <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
               <Grid.Row
@@ -74,7 +74,7 @@ const Languages = () => {
                 <Header as="h3" style={{ fontSize: '2em' }}>
                   {t('portuguese')}
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>High School Level</p>
+                <p style={{ fontSize: '1.33em' }}>{t('high_school_level')}</p>
               </Grid.Row>
               <Grid.Row
                 style={{
@@ -85,7 +85,7 @@ const Languages = () => {
                 <Header as="h3" style={{ fontSize: '2em' }}>
                   {t('italian')}
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>Middle School Level</p>
+                <p style={{ fontSize: '1.33em' }}>{t('middle_school_level')}</p>
               </Grid.Row>
             </Grid.Column>
           </Grid.Row>
@@ -104,9 +104,9 @@ const Languages = () => {
               style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
               <Header as="h3" style={{ fontSize: '2em' }}>
-                Basic
+                {t('basic')}
               </Header>
-              <p style={{ fontSize: '1.33em' }}>Beginner Level</p>
+              <p style={{ fontSize: '1.33em' }}>{t('beginner_level')}</p>
             </Grid.Column>
             <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
               <Grid.Row
@@ -118,7 +118,9 @@ const Languages = () => {
                 <Header as="h3" style={{ fontSize: '2em' }}>
                   {t('japanese')}
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>Primary School Level</p>
+                <p style={{ fontSize: '1.33em' }}>
+                  {t('primary_school_level')}
+                </p>
               </Grid.Row>
               <Grid.Row
                 style={{
@@ -129,7 +131,9 @@ const Languages = () => {
                 <Header as="h3" style={{ fontSize: '2em' }}>
                   {t('mandarin')}
                 </Header>
-                <p style={{ fontSize: '1.33em' }}>Primary School Level</p>
+                <p style={{ fontSize: '1.33em' }}>
+                  {t('primary_school_level')}
+                </p>
               </Grid.Row>
             </Grid.Column>
           </Grid.Row>
