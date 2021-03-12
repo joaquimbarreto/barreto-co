@@ -463,7 +463,7 @@ const CV = () => {
                 align="left"
               >
                 <Header as="h3" style={{ fontSize: '2em' }}>
-                  University of Adelaide - Adelaide, South Australia
+                  University of Adelaide - Adelaide, Australia
                 </Header>
                 <p style={{ fontSize: '1.33em' }}>
                   <strong>

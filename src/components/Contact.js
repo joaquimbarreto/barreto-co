@@ -23,7 +23,7 @@ const Contact = () => {
                 Email Joaquim
               </Button>
             </Grid.Column>
-            <Grid.Column floated="right" width={6}>
+            <Grid.Column floated="right" width={6} align="center">
               <Image
                 bordered
                 rounded

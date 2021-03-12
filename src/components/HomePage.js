@@ -28,7 +28,7 @@ const HomePage = () => {
 
               <p style={{ fontSize: '1.33em' }}>{t('welcome')}</p>
             </Grid.Column>
-            <Grid.Column floated="right" width={6}>
+            <Grid.Column floated="right" width={6} align="center">
               <Image
                 bordered
                 rounded
