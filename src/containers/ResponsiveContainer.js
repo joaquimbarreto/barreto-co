@@ -62,10 +62,6 @@ HomepageHeading.propTypes = {
   mobile: PropTypes.bool,
 };
 
-/* Heads up!
- * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
- * It can be more complicated, but you can create really flexible markup.
- */
 class DesktopContainer extends Component {
   state = {};
 
@@ -179,6 +175,9 @@ class MobileContainer extends Component {
           <Menu.Item as={Link} to="/" active>
             Home
           </Menu.Item>
+          <Menu.Item as={Link} to="blogs">
+            Blog
+          </Menu.Item>
           <Menu.Item
             as="a"
             href="http://www.github.com/joaquimbarreto"
@@ -187,19 +186,16 @@ class MobileContainer extends Component {
             Github
           </Menu.Item>
           <Menu.Item as={Link} to="projects">
-            Projects
-          </Menu.Item>
-          <Menu.Item as={Link} to="blogs">
-            Blogs
+            {this.props.t('projects')}
           </Menu.Item>
           <Menu.Item as={Link} to="languages">
-            Languages
+            {this.props.t('languages')}
           </Menu.Item>
           <Menu.Item as={Link} to="cv">
             CV
           </Menu.Item>
           <Menu.Item as={Link} to="contact">
-            Contact Me
+            {this.props.t('contact')}
           </Menu.Item>
         </Sidebar>
 
@@ -216,14 +212,14 @@ class MobileContainer extends Component {
                   <Icon name="sidebar" />
                 </Menu.Item>
                 <Menu.Item position="right">
-                  {/* TODO dropdown menu */}
+                  <DropdownLanguageSelection />
                   <Button
                     as={Link}
                     to="contact"
                     inverted
                     style={{ marginLeft: '0.5em' }}
                   >
-                    Contact
+                    {this.props.t('contact')}
                   </Button>
                 </Menu.Item>
               </Menu>
