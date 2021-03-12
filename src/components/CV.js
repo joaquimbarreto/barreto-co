@@ -41,9 +41,7 @@ const CV = () => {
               <Header as="h3" style={{ fontSize: '2em' }}>
                 {t('technical_projects')}
               </Header>
-              <p style={{ fontSize: '1.33em' }}>
-                Full-Stack Software Engineering
-              </p>
+              <p style={{ fontSize: '1.33em' }}>{t('software_engineering')}</p>
             </Grid.Column>
             <Grid.Column>
               <Grid.Row
@@ -193,9 +191,7 @@ const CV = () => {
               <Header as="h3" style={{ fontSize: '2em' }}>
                 {t('technical_skills')}
               </Header>
-              <p style={{ fontSize: '1.33em' }}>
-                Full-Stack Software Engineering
-              </p>
+              <p style={{ fontSize: '1.33em' }}>{t('software_engineering')}</p>
             </Grid.Column>
             <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
               <Grid.Row

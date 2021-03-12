@@ -1,5 +1,12 @@
 import React from 'react';
-import { Container, Grid, Header, List, Segment } from 'semantic-ui-react';
+import {
+  Container,
+  Grid,
+  Header,
+  List,
+  Segment,
+  Item,
+} from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -45,10 +52,36 @@ const Footer = () => {
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
-              <Header as="h4" inverted>
-                Joaquim Barreto
-              </Header>
-              <p>{t('job_title')}</p>
+              <Header
+                inverted
+                as="h4"
+                content="Joaquim Barreto"
+                href="http://www.joaquimbarreto.pt"
+                target="_blank"
+              />
+              <List link inverted>
+                <List.Item
+                  as="a"
+                  href="https://www.joaquimbarreto.net"
+                  target="_blank"
+                >
+                  <p>{t('job_title')}</p>
+                </List.Item>
+                <List.Item
+                  as="a"
+                  href="https://www.joaquimbarreto.art"
+                  target="_blank"
+                >
+                  {t('photographer')} / {t('filmmaker')}
+                </List.Item>
+                <List.Item
+                  as="a"
+                  href="https://www.joaquimbarreto.com"
+                  target="_blank"
+                >
+                  {t('economist')}
+                </List.Item>
+              </List>
             </Grid.Column>
           </Grid.Row>
         </Grid>
