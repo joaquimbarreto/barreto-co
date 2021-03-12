@@ -1,487 +1,486 @@
-import React from "react";
-import { Button, Divider, Grid, Header, Segment } from "semantic-ui-react";
-import ResponsiveContainer from "../containers/ResponsiveContainer";
-import Footer from "../containers/Footer";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Button, Divider, Grid, Header, Segment } from 'semantic-ui-react';
+import ResponsiveContainer from '../containers/ResponsiveContainer';
+import Footer from '../containers/Footer';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const CV = () => (
-  <ResponsiveContainer>
-    <Segment style={{ padding: "8em 0em" }} vertical>
-      <Divider
-        as="h4"
-        className="header"
-        horizontal
-        style={{ margin: "2em 0em", textTransform: "uppercase" }}
-      >
-        <Header as="h1" style={{ fontSize: "3em" }}>
-          Curriculum Vitae
-        </Header>
-      </Divider>
-      <Grid container celled="internally" stackable verticalAlign="middle">
-        <Grid.Row>
-          <Grid.Column>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Statement
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Full-stack software engineer with a passion for building
-              beautiful, fully functioning web apps. With experience in Angular
-              9, JavaScript, and Kubernetes and a background in film,
-              photography and economics, Joaquim discovered web development
-              through his strong desire for continuing learning. Joaquim brings
-              strong skills in team-building and project management that help
-              maximize growth across all major goals.
-            </p>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-    <Segment style={{ padding: "0em" }} vertical>
-      <Grid
-        celled="internally"
-        columns="equal"
-        stackable
-        style={{ paddingBottom: "2em", paddingTop: "2em" }}
-      >
-        <Grid.Row textAlign="center">
-          <Grid.Column
-            width={6}
-            style={{ paddingBottom: "2em", paddingTop: "2em" }}
-          >
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Tecnical Projects
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Full-Stack Software Engineering
-            </p>
-          </Grid.Column>
-          <Grid.Column>
-            <Grid.Row
-              align="left"
-              style={{
-                paddingBottom: "1em",
-              }}
-            >
-              <Header
-                as="h3"
-                style={{
-                  fontSize: "2em",
-                }}
-              >
-                Freelancer Booking App
+const CV = () => {
+  const { t } = useTranslation();
+
+  return (
+    <ResponsiveContainer>
+      <Segment style={{ padding: '4em 0em' }} vertical>
+        <Grid container celled="internally" stackable verticalAlign="middle">
+          <Grid.Row>
+            <Grid.Column>
+              <Header as="h1" style={{ fontSize: '3em' }}>
+                Curriculum Vitae
               </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                An app for a freelancer to let clients book their services.
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "1em",
-              }}
-              align="left"
+              <Divider style={{ margin: '2em 1em' }} />
+              <Header as="h3" style={{ fontSize: '2em' }}>
+                {t('statement_title')}
+              </Header>
+              <p style={{ fontSize: '1.33em' }}>{t('statement')}</p>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+      <Segment style={{ padding: '0em' }} vertical>
+        <Grid
+          celled="internally"
+          columns="equal"
+          stackable
+          style={{ paddingBottom: '2em', paddingTop: '2em' }}
+        >
+          <Grid.Row textAlign="center">
+            <Grid.Column
+              width={6}
+              style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
-              <Grid.Column
-                textAlign="center"
+              <Header as="h3" style={{ fontSize: '2em' }}>
+                {t('technical_projects')}
+              </Header>
+              <p style={{ fontSize: '1.33em' }}>{t('software_engineering')}</p>
+            </Grid.Column>
+            <Grid.Column>
+              <Grid.Row
+                align="left"
                 style={{
-                  paddingBottom: "2em",
+                  paddingBottom: '1em',
                 }}
               >
-                <Button
-                  size="large"
-                  href="https://www.freelancerbooking.app"
-                  target="_blank"
+                <Header
+                  as="h3"
+                  style={{
+                    fontSize: '2em',
+                  }}
                 >
-                  Open App
-                </Button>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row
-              align="left"
-              style={{
-                paddingBottom: "1em",
-              }}
-            >
-              <Header
-                as="h3"
+                  Freelancer Booking App
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>{t('fba_blurb')}</p>
+              </Grid.Row>
+              <Grid.Row
                 style={{
-                  fontSize: "2em",
+                  paddingBottom: '1em',
+                }}
+                align="left"
+              >
+                <Grid.Column
+                  textAlign="center"
+                  style={{
+                    paddingBottom: '2em',
+                  }}
+                >
+                  <Button
+                    size="large"
+                    href="https://www.freelancerbooking.app"
+                    target="_blank"
+                  >
+                    Open App
+                  </Button>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row
+                align="left"
+                style={{
+                  paddingBottom: '1em',
                 }}
               >
-                MERN Task Manager App
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                A simple task manager app done in MongoDB, Express, React and
-                Node.
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "1em",
-              }}
-              align="left"
-            >
-              <Grid.Column
-                textAlign="center"
+                <Header
+                  as="h3"
+                  style={{
+                    fontSize: '2em',
+                  }}
+                >
+                  MERN Task Manager App
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>{t('mern_blurb')}</p>
+              </Grid.Row>
+              <Grid.Row
                 style={{
-                  paddingBottom: "2em",
+                  paddingBottom: '1em',
+                }}
+                align="left"
+              >
+                <Grid.Column
+                  textAlign="center"
+                  style={{
+                    paddingBottom: '2em',
+                  }}
+                >
+                  <Button
+                    size="large"
+                    href="https://mern-task-manager.herokuapp.com"
+                    target="_blank"
+                  >
+                    Open App
+                  </Button>
+                  <Button
+                    size="large"
+                    href="https://github.com/joaquimbarreto/task-manager"
+                    target="_blank"
+                  >
+                    Github
+                  </Button>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '1em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Pig Latin Translator App
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>{t('pig_latin_blurb')}</p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '1em',
+                }}
+                align="left"
+              >
+                <Grid.Column
+                  textAlign="center"
+                  style={{
+                    paddingBottom: '2em',
+                  }}
+                >
+                  <Button
+                    size="large"
+                    href="https://github.com/joaquimbarreto/pig-latin-MEAN"
+                    target="_blank"
+                  >
+                    Github
+                  </Button>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row
+                align="left"
+                style={{
+                  paddingBottom: '1em',
                 }}
               >
-                <Button
-                  size="large"
-                  href="https://mern-task-manager.herokuapp.com"
-                  target="_blank"
+                <Header
+                  as="h3"
+                  style={{
+                    fontSize: '2em',
+                  }}
                 >
-                  Open App
-                </Button>
-                <Button
-                  size="large"
-                  href="https://github.com/joaquimbarreto/task-manager"
-                  target="_blank"
-                >
-                  Github
-                </Button>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "1em",
-              }}
-              align="left"
+                  <Link to="/projects">{t('see_all_projects')}</Link>
+                </Header>
+              </Grid.Row>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+      <Segment style={{ padding: '0em' }} vertical>
+        <Grid
+          celled="internally"
+          columns="equal"
+          stackable
+          style={{ paddingBottom: '2em', paddingTop: '2em' }}
+        >
+          <Grid.Row textAlign="center">
+            <Grid.Column
+              width={6}
+              style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Pig Latin Translator App
+              <Header as="h3" style={{ fontSize: '2em' }}>
+                {t('technical_skills')}
               </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                An app to translate any text to pig latin.
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "1em",
-              }}
-              align="left"
-            >
-              <Grid.Column
-                textAlign="center"
+              <p style={{ fontSize: '1.33em' }}>{t('software_engineering')}</p>
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
+              <Grid.Row
                 style={{
-                  paddingBottom: "2em",
+                  paddingBottom: '2em',
                 }}
+                align="left"
               >
-                <Button
-                  size="large"
-                  href="https://www.piglatin.app"
-                  target="_blank"
-                  disabled="true"
-                >
-                  Coming Soon
-                </Button>
-                <Button
-                  size="large"
-                  href="https://github.com/joaquimbarreto/pig-latin-MEAN"
-                  target="_blank"
-                >
-                  Github
-                </Button>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row
-              align="left"
-              style={{
-                paddingBottom: "1em",
-              }}
-            >
-              <Header
-                as="h3"
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Front-End
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  React.js, Angular 2+, JavaScript, TypeScript, (Blazor
+                  WebAssembly {t('coming_soon')})
+                </p>
+              </Grid.Row>
+              <Grid.Row
                 style={{
-                  fontSize: "2em",
+                  paddingBottom: '2em',
                 }}
+                align="left"
               >
-                <Link to="/projects">See All Projects</Link>
-              </Header>
-            </Grid.Row>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-    <Segment style={{ padding: "0em" }} vertical>
-      <Grid
-        celled="internally"
-        columns="equal"
-        stackable
-        style={{ paddingBottom: "2em", paddingTop: "2em" }}
-      >
-        <Grid.Row textAlign="center">
-          <Grid.Column
-            width={6}
-            style={{ paddingBottom: "2em", paddingTop: "2em" }}
-          >
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Technical Skills
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>
-              Full-Stack Software Engineering
-            </p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Back-End
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  Node.js, C#, ASP.NET, (Blazor Server {t('coming_soon')})
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Mobile
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  (Kotlin {t('coming_soon')})
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Databases
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  PostgreSQL, SQLite3, MongoDB, MySQL
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  TDD
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  Jest, Jasmine, Karma, Travis
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Dev Ops
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>Kubernetes & Docker</p>
+              </Grid.Row>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+      <Segment style={{ padding: '0em' }} vertical>
+        <Grid
+          celled="internally"
+          columns="equal"
+          stackable
+          style={{ paddingBottom: '2em', paddingTop: '2em' }}
+        >
+          <Grid.Row textAlign="center">
+            <Grid.Column
+              width={6}
+              style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Back-End
+              <Header as="h3" style={{ fontSize: '2em' }}>
+                {t('employment_history')}
               </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                Node.js, C#, ASP.NET, (Blazor Server coming soon)
+              <p style={{ fontSize: '1.33em' }}>
+                {t('china')} & {t('uk')}
               </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Softwave-Soltec, {t('rome')}, {t('italy')}
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>
+                      {t('january')} 2020 - {t('present')}
+                    </i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
+                  {t('job_title')}
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Investech-Blue, {t('rome')}, {t('italy')}
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>
+                      {t('october')} 2019 - {t('december')} 2019
+                    </i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
+                  {t('job_title')}
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Barreto.photography, {t('london')}, {t('uk')}
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>
+                      {t('july')} 2003 - {t('october')} 2018
+                    </i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
+                  {t('photographer')}
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Barreto.film & Barreto.video, {t('london')}, {t('uk')}
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>
+                      {t('march')} 2005- {t('october')} 2018
+                    </i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
+                  Filmmaker
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Bureau of Finance, Government of Macau (DSF), Macau,{' '}
+                  {t('china')}
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>
+                      {' '}
+                      {t('july')} 1999 - {t('june')} 2003
+                    </i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
+                  {t('economist')}
+                </p>
+              </Grid.Row>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+      <Segment style={{ padding: '0em' }} vertical>
+        <Grid
+          celled="internally"
+          columns="equal"
+          stackable
+          style={{ paddingBottom: '2em', paddingTop: '2em' }}
+        >
+          <Grid.Row textAlign="center">
+            <Grid.Column
+              width={6}
+              style={{ paddingBottom: '2em', paddingTop: '2em' }}
             >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Front-End
+              <Header as="h3" style={{ fontSize: '2em' }}>
+                {t('education')}
               </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                React.js, Angular 9, TypeScript, (Blazor WebAssembly coming
-                soon)
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Databases
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                PostgreSQL, SQLite3, MongoDB, MySQL
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                TDD
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>Jest, Jasmine, Karma, Travis</p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Dev Ops
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                Heroku, Netlify, Kubernetes & Docker
-              </p>
-            </Grid.Row>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-    <Segment style={{ padding: "0em" }} vertical>
-      <Grid
-        celled="internally"
-        columns="equal"
-        stackable
-        style={{ paddingBottom: "2em", paddingTop: "2em" }}
-      >
-        <Grid.Row textAlign="center">
-          <Grid.Column
-            width={6}
-            style={{ paddingBottom: "2em", paddingTop: "2em" }}
-          >
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Employment History
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>China & UK</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Softwave-Soltec, Rome, Italy
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i>January 2020 - Present</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
-                Junior Full-Stack Software Engineer
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Investech-Blue, Rome, Italy
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i>October 2019 - December 2019</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
-                Junior Software Engineer
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Barreto.photography, London, UK
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i>July 2003 - October 2018</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
-                Photographer
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Barreto.film & Barreto.video, London, UK
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i>March 2005- October 2018</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
-                Filmmaker
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Bureau of Finance, Government of Macau (DSF), Macau, China
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i> July 1999 - June 2003</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em", paddingBottom: "1em" }}>
-                Economist
-              </p>
-            </Grid.Row>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-    <Segment style={{ padding: "0em" }} vertical>
-      <Grid
-        celled="internally"
-        columns="equal"
-        stackable
-        style={{ paddingBottom: "2em", paddingTop: "2em" }}
-      >
-        <Grid.Row textAlign="center">
-          <Grid.Column
-            width={6}
-            style={{ paddingBottom: "2em", paddingTop: "2em" }}
-          >
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              Education
-            </Header>
-            <p style={{ fontSize: "1.33em" }}>Australia & UK</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: "2em", paddingTop: "2em" }}>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                Flatiron School - London, UK
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i>2019</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em" }}>
-                Full Stack Web Development, Ruby on Rails, JavaScript & React
-                program
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                University of the Arts, London - London, UK
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i>2006</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em" }}>
-                Master of Arts: Fashion Photography
-              </p>
-            </Grid.Row>
-            <Grid.Row
-              style={{
-                paddingBottom: "2em",
-              }}
-              align="left"
-            >
-              <Header as="h3" style={{ fontSize: "2em" }}>
-                University of Adelaide - Adelaide, South Australia
-              </Header>
-              <p style={{ fontSize: "1.33em" }}>
-                <strong>
-                  <i>1998</i>
-                </strong>
-              </p>
-              <p style={{ fontSize: "1.33em" }}>
-                Bachelor of Economics: Econometrics
-              </p>
-            </Grid.Row>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
-    <Footer />
-  </ResponsiveContainer>
-);
+              <p style={{ fontSize: '1.33em' }}>Australia & {t('uk')}</p>
+            </Grid.Column>
+            <Grid.Column style={{ paddingBottom: '2em', paddingTop: '2em' }}>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Flatiron School - {t('london')}, {t('uk')}
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>2019</i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em' }}>
+                  Full Stack Web Development, Ruby on Rails, JavaScript & React
+                  program
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  University of the Arts, London - {t('london')}, {t('uk')}
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>2006</i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em' }}>
+                  Master of Arts: Fashion Photography
+                </p>
+              </Grid.Row>
+              <Grid.Row
+                style={{
+                  paddingBottom: '2em',
+                }}
+                align="left"
+              >
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  University of Adelaide - Adelaide, South Australia
+                </Header>
+                <p style={{ fontSize: '1.33em' }}>
+                  <strong>
+                    <i>1998</i>
+                  </strong>
+                </p>
+                <p style={{ fontSize: '1.33em' }}>
+                  Bachelor of Economics: Econometrics
+                </p>
+              </Grid.Row>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Segment>
+      <Footer />
+    </ResponsiveContainer>
+  );
+};
 
 export default CV;

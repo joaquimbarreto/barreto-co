@@ -12,6 +12,8 @@ import {
   Visibility,
 } from 'semantic-ui-react';
 import { NavLink, Link } from 'react-router-dom';
+import DropdownLanguageSelection from '../components/LanguageDropdown';
+import { useTranslation, withTranslation } from 'react-i18next';
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -26,31 +28,35 @@ const getWidth = () => {
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
  */
-const HomepageHeading = ({ mobile }) => (
-  <Container text>
-    <Header
-      as="h1"
-      content="Joaquim Barreto"
-      inverted
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '1em',
-      }}
-    />
-    <Header
-      as="h2"
-      content="Junior Full-Stack Software Engineer"
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.4em',
-      }}
-    />
-  </Container>
-);
+const HomepageHeading = ({ mobile }) => {
+  const { t } = useTranslation();
+
+  return (
+    <Container text>
+      <Header
+        as="h1"
+        content="Joaquim Barreto"
+        inverted
+        style={{
+          fontSize: mobile ? '2em' : '4em',
+          fontWeight: 'normal',
+          marginBottom: 0,
+          marginTop: mobile ? '1.5em' : '1em',
+        }}
+      />
+      <Header
+        as="h2"
+        content={t('job_title')}
+        inverted
+        style={{
+          fontSize: mobile ? '1.5em' : '1.7em',
+          fontWeight: 'normal',
+          marginTop: mobile ? '0.5em' : '1.4em',
+        }}
+      />
+    </Container>
+  );
+};
 
 HomepageHeading.propTypes = {
   mobile: PropTypes.bool,
@@ -109,15 +115,16 @@ class DesktopContainer extends Component {
                   Github
                 </Menu.Item>
                 <Menu.Item as={Nav} to="/projects" name="projects">
-                  Projects
+                  {this.props.t('projects')}
                 </Menu.Item>
                 <Menu.Item as={Nav} to="/languages" name="languages">
-                  Languages
+                  {this.props.t('languages')}
                 </Menu.Item>
                 <Menu.Item as={Nav} to="/cv" name="cv">
                   CV
                 </Menu.Item>
                 <Menu.Item position="right">
+                  <DropdownLanguageSelection />
                   <Button
                     as={Link}
                     to="contact"
@@ -125,7 +132,7 @@ class DesktopContainer extends Component {
                     primary={fixed}
                     style={{ marginLeft: '0.5em' }}
                   >
-                    Contact Me
+                    {this.props.t('contact')}
                   </Button>
                 </Menu.Item>
               </Container>
@@ -209,13 +216,14 @@ class MobileContainer extends Component {
                   <Icon name="sidebar" />
                 </Menu.Item>
                 <Menu.Item position="right">
+                  {/* TODO dropdown menu */}
                   <Button
                     as={Link}
                     to="contact"
                     inverted
                     style={{ marginLeft: '0.5em' }}
                   >
-                    Contact Me
+                    Contact
                   </Button>
                 </Menu.Item>
               </Menu>
@@ -234,15 +242,17 @@ MobileContainer.propTypes = {
   children: PropTypes.node,
 };
 
-const ResponsiveContainer = ({ children }) => (
-  <div>
-    <DesktopContainer>{children}</DesktopContainer>
-    <MobileContainer>{children}</MobileContainer>
-  </div>
-);
+const ResponsiveContainer = ({ children, t }) => {
+  return (
+    <div>
+      <DesktopContainer t={t}>{children}</DesktopContainer>
+      <MobileContainer t={t}>{children}</MobileContainer>
+    </div>
+  );
+};
 
 ResponsiveContainer.propTypes = {
   children: PropTypes.node,
 };
 
-export default ResponsiveContainer;
+export default withTranslation()(ResponsiveContainer);
