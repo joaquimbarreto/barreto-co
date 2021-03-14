@@ -22,10 +22,10 @@ const Projects = () => {
           <Button
             as="a"
             size="huge"
-            href="http://www.freelancerbooking.app"
+            href="https://www.github.com/joaquimbarreto/freelancer-booking-app"
             target="_blank"
           >
-            Open App
+            Github
           </Button>
           <Divider style={{ margin: '2em 1em' }} />
           <Header as="h3" style={{ fontSize: '2em' }}>

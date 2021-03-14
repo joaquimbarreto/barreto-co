@@ -62,5 +62,7 @@
   "see_all_projects": "See All Projects",
   "fba_blurb": "An app for a freelancer to let clients book their services.",
   "mern_blurb": "A simple task manager app done in MongoDB, Express, React and Node.",
-  "pig_latin_blurb": "An app to translate any text to pig latin."
+  "pig_latin_blurb": "An app to translate any text to pig latin.",
+  "econometrics": "Econometrics",
+  "photography": "Photography"
 }

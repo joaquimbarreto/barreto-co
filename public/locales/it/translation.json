@@ -62,5 +62,7 @@
   "see_all_projects": "Visualizzare piu Progetti",
   "fba_blurb": "Una app per che consente ai clienti di prenotare i loro servizi.",
   "mern_blurb": "Una app di task manager eseguita in MongoDB, Express, React e Node.",
-  "pig_latin_blurb": "Una app per tradurre qualsiasi testo in pig latin."
+  "pig_latin_blurb": "Una app per tradurre qualsiasi testo in pig latin.",
+  "econometrics": "Econometria",
+  "photography": "Fotografia"
 }

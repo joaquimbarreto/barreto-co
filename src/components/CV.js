@@ -74,10 +74,10 @@ const CV = () => {
                 >
                   <Button
                     size="large"
-                    href="https://www.freelancerbooking.app"
+                    href="https://www.github.com/joaquimbarreto/freelancer-booking-app"
                     target="_blank"
                   >
-                    Open App
+                    Github
                   </Button>
                 </Grid.Column>
               </Grid.Row>
@@ -372,7 +372,7 @@ const CV = () => {
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em', paddingBottom: '1em' }}>
-                  Filmmaker
+                  {t('filmmaker')}
                 </p>
               </Grid.Row>
               <Grid.Row
@@ -434,7 +434,7 @@ const CV = () => {
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em' }}>
-                  Full Stack Web Development, Ruby on Rails, JavaScript & React
+                  {t('software_engineering')}: Ruby on Rails, JavaScript & React
                   program
                 </p>
               </Grid.Row>
@@ -453,7 +453,7 @@ const CV = () => {
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em' }}>
-                  Master of Arts: Fashion Photography
+                  Master of Arts: {t('photography')}
                 </p>
               </Grid.Row>
               <Grid.Row
@@ -471,7 +471,7 @@ const CV = () => {
                   </strong>
                 </p>
                 <p style={{ fontSize: '1.33em' }}>
-                  Bachelor of Economics: Econometrics
+                  Bachelor of Economics: {t('econometrics')}
                 </p>
               </Grid.Row>
             </Grid.Column>
